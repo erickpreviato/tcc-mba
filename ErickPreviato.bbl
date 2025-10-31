@@ -1,0 +1,101 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Bóbó \textit{et al.} 2019]{bobo2019}
+\abntrefinfo{Bóbó \textit{et al.}}{Bóbó \textit{et al.}}{2019}
+{BóBó, M. \textit{et al.} Análise de sentimento na educação: Um mapeamento sistemático da literatura. \textit{In}:  \textbf{Anais do XXX Simpósio Brasileiro de Informática na Educação (SBIE 2019)}. [\textit{S.l.: s.n.}]: Brazilian Computer Society (Sociedade Brasileira de Computação - SBC), 2019.  (SBIE 2019), p.~249.}
+
+\bibitem[Devlin \textit{et al.} 2019]{devlin2019}
+\abntrefinfo{Devlin \textit{et al.}}{Devlin \textit{et al.}}{2019}
+{DEVLIN, J. \textit{et al.} \textbf{BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}. 2019.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/1810.04805}.}
+
+\bibitem[Ganesan 2022]{ganesan2022}
+\abntrefinfo{Ganesan}{Ganesan}{2022}
+{GANESAN, K. \textbf{The Business Case for AI: A Leader's Guide to AI Strategies, Best Practices \& Real-World Applications}. Opinosis Analytics Publishing, 2022.
+ISBN 9781544528717. Dispon{\'\i}vel em: \url{https://books.google.com.br/books?id=Vn34zgEACAAJ}.}
+
+\bibitem[Grljević, Bošnjak e Kovačević 2022]{grljevic2022}
+\abntrefinfo{Grljević, Bošnjak e Kovačević}{Grljević; Bošnjak; Kovačević}{2022}
+{GRLJEVIć, O.; BOšNJAK, Z.; KOVAčEVIć, A. Opinion mining in higher education: a corpus-based approach.
+\textbf{Enterprise Information Systems}, Taylor \& Francis, v.~16, n.~5, p. 1773542, 2022.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1080/17517575.2020.1773542}.}
+
+\bibitem[Hu e Liu 2004]{hu2004}
+\abntrefinfo{Hu e Liu}{Hu; Liu}{2004}
+{HU, M.; LIU, B. Mining and summarizing customer reviews. \textit{In}:  \textbf{Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}. New York, NY, USA: Association for Computing Machinery, 2004.  (KDD '04), p. 168–177.
+ISBN 1581138881. Dispon{\'\i}vel em: \url{https://doi.org/10.1145/1014052.1014073}.}
+
+\bibitem[Islam 2018]{islam2018}
+\abntrefinfo{Islam}{Islam}{2018}
+{ISLAM, N.~S. M.~M. Comparative study on machine learning algorithms for sentiment classification.
+\textbf{International Journal of Computer Applications}, Foundation of Computer Science (FCS), NY, USA, New York, USA, v.~182, n.~21, p.~1--7, Oct 2018.
+ISSN 0975-8887.
+Dispon{\'\i}vel em: \url{https://ijcaonline.org/archives/volume182/number21/30054-2018917961/}.}
+
+\bibitem[Koufakou 2024]{koufakou2024}
+\abntrefinfo{Koufakou}{Koufakou}{2024}
+{KOUFAKOU, A. Deep learning for opinion mining and topic classification of course reviews.
+\textbf{Education and Information Technologies}, v.~29, n.~3, p. 2973--2997, 2024.
+ISSN 1573-7608.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10639-023-11736-2}.}
+
+\bibitem[Liu 2012]{liu2012}
+\abntrefinfo{Liu}{Liu}{2012}
+{LIU, B. \textbf{Sentiment Analysis and Opinion Mining}. [\textit{S.l.: s.n.}]: Morgan \& Claypool Publishers, 2012.
+ISBN 1608458849.}
+
+\bibitem[Liu 2020]{liu2020}
+\abntrefinfo{Liu}{Liu}{2020}
+{LIU, B. Introduction.
+\textit{In}:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Sentiment Analysis: Mining Opinions, Sentiments, and Emotions}. [\textit{S.l.: s.n.}]: Cambridge University Press, 2020.  (Studies in Natural Language Processing), p. 1–17.}
+
+\bibitem[Medhat, Hassan e Korashy 2014]{medhat2014}
+\abntrefinfo{Medhat, Hassan e Korashy}{Medhat; Hassan; Korashy}{2014}
+{MEDHAT, W.; HASSAN, A.; KORASHY, H. Sentiment analysis algorithms and applications: A survey.
+\textbf{Ain Shams Engineering Journal}, v.~5, n.~4, p. 1093--1113, 2014.
+ISSN 2090-4479.
+Dispon{\'\i}vel em: \url{https://www.sciencedirect.com/science/article/pii/S2090447914000550}.}
+
+\bibitem[Pang e Lee 2004]{pang2004}
+\abntrefinfo{Pang e Lee}{Pang; Lee}{2004}
+{PANG, B.; LEE, L. \textbf{A Sentimental Education: Sentiment Analysis Using Subjectivity Summarization Based on Minimum Cuts}. 2004.
+Dispon{\'\i}vel em: \url{https://arxiv.org/abs/cs/0409058}.}
+
+\bibitem[Patel e Sachin 2024]{patel2024}
+\abntrefinfo{Patel e Sachin}{Patel; Sachin}{2024}
+{PATEL, S.; SACHIN, D. "a comparative study of supervised and unsupervised classification techniques for sentiment analysis in imdb". \textit{In}:  . [\textit{S.l.: s.n.}], 2024.}
+
+\bibitem[Romero e Ventura 2020]{romero2020}
+\abntrefinfo{Romero e Ventura}{Romero; Ventura}{2020}
+{ROMERO, C.; VENTURA, S. Educational data mining and learning analytics: An updated survey.
+\textbf{WIREs Data Mining and Knowledge Discovery}, Wiley, v.~10, n.~3, jan. 2020.
+ISSN 1942-4795.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1002/widm.1355}.}
+
+\bibitem[Salgado 2024]{salgado2024}
+\abntrefinfo{Salgado}{Salgado}{2024}
+{SALGADO, H. Análise de sentimentos de tweets em língua portuguesa. \textit{In}:  . [\textit{S.l.: s.n.}], 2024.}
+
+\bibitem[Shaik \textit{et al.} 2023]{shaik2023}
+\abntrefinfo{Shaik \textit{et al.}}{Shaik \textit{et al.}}{2023}
+{SHAIK, T. \textit{et al.} Sentiment analysis and opinion mining on educational data: A survey.
+\textbf{Natural Language Processing Journal}, Elsevier BV, v.~2, p. 100003, mar. 2023.
+ISSN 2949-7191.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.nlp.2022.100003}.}
+
+\bibitem[Shaukat \textit{et al.} 2020]{shaukat2020}
+\abntrefinfo{Shaukat \textit{et al.}}{Shaukat \textit{et al.}}{2020}
+{SHAUKAT, Z. \textit{et al.} Sentiment analysis on imdb using lexicon and neural networks.
+\textbf{SN Applied Sciences}, 2020.}
+
+\bibitem[Souza, Nogueira e Lotufo 2020]{souza2020}
+\abntrefinfo{Souza, Nogueira e Lotufo}{Souza; Nogueira; Lotufo}{2020}
+{SOUZA, F.; NOGUEIRA, R.; LOTUFO, R. Bertimbau: Pretrained bert models for brazilian portuguese. \textit{In}:  \textbf{Intelligent Systems: 9th Brazilian Conference, BRACIS 2020, Rio Grande, Brazil, October 20–23, 2020, Proceedings, Part I}. Berlin, Heidelberg: Springer-Verlag, 2020. p. 403–417.
+ISBN 978-3-030-61376-1. Dispon{\'\i}vel em: \url{https://doi.org/10.1007/978-3-030-61377-8\_28}.}
+
+\end{thebibliography}
