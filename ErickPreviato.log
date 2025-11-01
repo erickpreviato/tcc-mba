@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.13)  31 OCT 2025 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.31)  1 NOV 2025 09:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Projetos/mba-tcc/ErickPreviato.tex
-(d:/Projetos/mba-tcc/ErickPreviato.tex
+**d:/Erick/Projetos/tcc-mba/ErickPreviato.tex
+(d:/Erick/Projetos/tcc-mba/ErickPreviato.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-09-02>
+L3 programming layer <2025-10-24>
 (./USPSC-classe/USPSC.cls
 Document Class: USPSC-classe/USPSC 01/06/2021 v3.1 USPSC
 (c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
@@ -14,14 +14,14 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (c:/texlive/2025/texmf-dist/tex/latex/memoir/memoir.cls
 Document Class: memoir 2025/10/02 v3.8.4 configurable book, report, article document class
 (c:/texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty (c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-09-02 L3 programming layer (loader) 
+Package: expl3 2025-10-24 L3 programming layer (loader) 
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
  (c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
+Package: xparse 2025-10-09 L3 Experimental document command parser
 ) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count276
@@ -477,38 +477,43 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 \BKM@id=\count347
 )) (c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/10/01 v25.13 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count348
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2045.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2047.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2049.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2050.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2051.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2053.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2055.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
 \U@D=\dimen197
 \l@unhyphenated=\language90
  (c:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count349
+ (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex) (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex) (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex) (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/pt/babel-brazil.tex
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 19.
+
+)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4295.
  (c:/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
- (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 12.
-)
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 108.
-) (c:/texlive/2025/texmf-dist/tex/generic/babel-french/french.ldf
-Language: french 2025-08-15 v4.0e French support from the babel system
- (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
+)
 Package babel Info: Importing font and identification data for french
-(babel)             from babel-fr.ini. Reported on input line 12.
-) (c:/texlive/2025/texmf-dist/tex/generic/babel-french/french3.ldf
+(babel)             from babel-fr.ini. Reported on input line 4295.
+ (c:/texlive/2025/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2025-08-15 v4.0e French support from the babel system
+ (c:/texlive/2025/texmf-dist/tex/generic/babel-french/french3.ldf
 Language: french 2025-08-15 v3.7e French support from the babel system
 \FB@stdchar=\count350
 Package babel Info: Making : an active character on input line 273.
@@ -531,19 +536,21 @@ Package babel Info: Making ? an active character on input line 276.
 \leftmarginFB=\dimen260
 \parindentFFN=\dimen261
 \FBfnindent=\dimen262
-)) (c:/texlive/2025/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
- (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+))
 Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 12.
-)
+(babel)             from babel-es.ini. Reported on input line 4295.
+ (c:/texlive/2025/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks26
 \es@quotdepth=\count357
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-) (c:/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazil.ldf
+)
+Package babel Info: Importing font and identification data for brazil
+(babel)             from babel-pt-BR.ini. Reported on input line 4295.
+ (c:/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
 (babel)             (\language72). Reported on input line 111.
@@ -888,21 +895,24 @@ File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \CF_testbox=\box74
 \CF_chargebox=\box75
 \CF_substtoks=\toks44
+\CF_harrow_boxup=\box76
+\CF_harrow_boxdown=\box77
+\CF_hreact_cnt=\count402
 )
-Package: chemfig 2023/12/28 v1.66 Draw molecule with an easy syntax (CT)
+Package: chemfig 2025/10/30 v1.71 Draw molecule with an easy syntax (CT)
 ) (c:/texlive/2025/texmf-dist/tex/latex/chemmacros/chemmacros.sty (c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 Package: chemmacros 2022/03/11 v6.2a comprehensive support for typesetting chemistry documents (CN & SK)
 \l__chemmacros_tmpa_dim=\dimen326
 \l__chemmacros_tmpb_dim=\dimen327
 \l__chemmacros_tmpc_dim=\dimen328
-\l__chemmacros_tmpa_int=\count402
-\l__chemmacros_tmpb_int=\count403
-\l__chemmacros_tmpc_int=\count404
-\l__chemmacros_tmpa_box=\box76
-\l__chemmacros_tmpb_box=\box77
-\l__chemmacros_tmpc_box=\box78
+\l__chemmacros_tmpa_int=\count403
+\l__chemmacros_tmpb_int=\count404
+\l__chemmacros_tmpc_int=\count405
+\l__chemmacros_tmpa_box=\box78
+\l__chemmacros_tmpb_box=\box79
+\l__chemmacros_tmpc_box=\box80
 Loading the chemmacros module `base' ...
 
 Loading the chemmacros module `base' ...
@@ -933,8 +943,8 @@ Loading the chemmacros module `greek' ...
 Loading the chemmacros module `greek' ...
 (c:/texlive/2025/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
-\l__chemgreek_tmpa_int=\count405
-\g__chemgreek_tmpa_int=\count406
+\l__chemgreek_tmpa_int=\count406
+\g__chemgreek_tmpa_int=\count407
 )
 Loading the chemmacros module `formula' ...
 
@@ -968,11 +978,11 @@ File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfdecoratedinputsegmentcompleteddistance=\dimen338
 \pgfdecoratedinputsegmentremainingdistance=\dimen339
 \pgf@decorate@distancetomove=\dimen340
-\pgf@decorate@repeatstate=\count407
+\pgf@decorate@repeatstate=\count408
 \pgfdecorationsegmentamplitude=\dimen341
 \pgfdecorationsegmentlength=\dimen342
 )
-\tikz@lib@dec@box=\box79
+\tikz@lib@dec@box=\box81
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex))
 \l__chemmacros_el_length_dim=\dimen343
 Loading the chemmacros module `isotopes' ...
@@ -980,8 +990,8 @@ Loading the chemmacros module `isotopes' ...
 Loading the chemmacros module `isotopes' ...
 (c:/texlive/2025/texmf-dist/tex/latex/elements/elements.sty
 Package: elements 2022/01/29 v0.4 properties of chemical elements
-\c@@elements@orbital@type=\count408
-\c@@elements@shell@number=\count409
+\c@@elements@orbital@type=\count409
+\c@@elements@shell@number=\count410
 )
 Loading the chemmacros module `mechanisms' ...
 
@@ -996,7 +1006,7 @@ Loading the chemmacros module `polymers' ...
 \l__chemmacros_polymer_delimiter_depth_dim=\dimen345
 Loading the chemmacros module `reactions' ...
 Loading the chemmacros module `reactions' ...
-\c@reaction=\count410
+\c@reaction=\count411
 (c:/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
  (c:/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -1013,19 +1023,19 @@ LaTeX Info: Redefining \boldsymbol on input line 28.
 ) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count411
+\inf@bad=\count412
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count412
-\leftroot@=\count413
+\uproot@=\count413
+\leftroot@=\count414
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count414
-\DOTSCASE@=\count415
+\classnum@=\count415
+\DOTSCASE@=\count416
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box80
-\strutbox@=\box81
+\Mathstrutbox@=\box82
+\strutbox@=\box83
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
@@ -1033,20 +1043,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen347
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count416
+\macc@depth=\count417
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count417
+\c@MaxMatrixCols=\count418
 \dotsspace@=\muskip18
-\c@parentequation=\count418
-\dspbrk@lvl=\count419
+\c@parentequation=\count419
+\dspbrk@lvl=\count420
 \tag@help=\toks46
-\row@=\count420
-\column@=\count421
-\maxfields@=\count422
+\row@=\count421
+\column@=\count422
+\maxfields@=\count423
 \andhelp@=\toks47
 \eqnshift@=\dimen348
 \alignsep@=\dimen349
@@ -1061,7 +1071,7 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
 )
-\g_MT_multlinerow_int=\count423
+\g_MT_multlinerow_int=\count424
 \l_MT_multwidth_dim=\dimen354
 \origjot=\skip265
 \l_MT_shortvdotswithinadjustabove_dim=\dimen355
@@ -1070,7 +1080,7 @@ LaTeX Info: Redefining \] on input line 2950.
 \l_MT_below_intertext_sep=\dimen358
 \l_MT_above_shortintertext_sep=\dimen359
 \l_MT_below_shortintertext_sep=\dimen360
-\xmathstrut@box=\box82
+\xmathstrut@box=\box84
 \xmathstrut@dim=\dimen361
 )
 Loading the chemmacros module `redox' ...
@@ -1079,7 +1089,7 @@ Loading the chemmacros module `redox' ...
 (c:/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\l__chemmacros_ox_number_int=\count424
+\l__chemmacros_ox_number_int=\count425
 \l__chemmacros_redox_sep_dim=\dimen362
 \l__chemmacros_redox_sep_default_dim=\dimen363
 \l__chemmacros_redox_dist_dim=\dimen364
@@ -1088,8 +1098,8 @@ Loading the chemmacros module `xfrac' ...
 Loading the chemmacros module `xfrac' ...
 (c:/texlive/2025/texmf-dist/tex/latex/xfrac/xfrac.sty
 Package: xfrac 2024-06-04 Split-level fractions
-\l__xfrac_slash_box=\box83
-\l__xfrac_tmp_box=\box84
+\l__xfrac_slash_box=\box85
+\l__xfrac_tmp_box=\box86
 \l__xfrac_denominator_bot_sep_dim=\dimen365
 \l__xfrac_numerator_bot_sep_dim=\dimen366
 \l__xfrac_numerator_top_sep_dim=\dimen367
@@ -1126,49 +1136,49 @@ Loading the chemmacros module `scheme' ...
 Package: chemnum 2021/01/21 v1.3a a comprehensive approach for the numbering of chemical compounds (CN)
  (c:/texlive/2025/texmf-dist/tex/latex/psfrag/psfrag.sty
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
-\pfg@pcount=\count425
-\pfg@scount=\count426
+\pfg@pcount=\count426
+\pfg@scount=\count427
 \pfg@temp=\write5
 )
-\l__chemnum_tmpa_int=\count427
-\l__chemnum_tmpb_int=\count428
-\l__chemnum_tmpc_int=\count429
-\c@cmpdmain=\count430
-\g__chemnum_main_int=\count431
-\l__chemnum_compound_replace_int=\count432
+\l__chemnum_tmpa_int=\count428
+\l__chemnum_tmpb_int=\count429
+\l__chemnum_tmpc_int=\count430
+\c@cmpdmain=\count431
+\g__chemnum_main_int=\count432
+\l__chemnum_compound_replace_int=\count433
 )
 ==> First Aid for chemnum.sty applied!
 Loading the chemmacros module `spectroscopy' ...
 Loading the chemmacros module `spectroscopy' ...
 (c:/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count433
-\l__siunitx_number_exponent_fixed_int=\count434
-\l__siunitx_number_min_decimal_int=\count435
-\l__siunitx_number_min_integer_int=\count436
-\l__siunitx_number_round_precision_int=\count437
-\l__siunitx_number_lower_threshold_int=\count438
-\l__siunitx_number_upper_threshold_int=\count439
-\l__siunitx_number_group_first_int=\count440
-\l__siunitx_number_group_size_int=\count441
-\l__siunitx_number_group_minimum_int=\count442
+\l__siunitx_number_uncert_offset_int=\count434
+\l__siunitx_number_exponent_fixed_int=\count435
+\l__siunitx_number_min_decimal_int=\count436
+\l__siunitx_number_min_integer_int=\count437
+\l__siunitx_number_round_precision_int=\count438
+\l__siunitx_number_lower_threshold_int=\count439
+\l__siunitx_number_upper_threshold_int=\count440
+\l__siunitx_number_group_first_int=\count441
+\l__siunitx_number_group_size_int=\count442
+\l__siunitx_number_group_minimum_int=\count443
 \l__siunitx_angle_tmp_dim=\dimen370
-\l__siunitx_angle_marker_box=\box85
-\l__siunitx_angle_unit_box=\box86
-\l__siunitx_compound_count_int=\count443
-\l__siunitx_table_tmp_box=\box87
+\l__siunitx_angle_marker_box=\box87
+\l__siunitx_angle_unit_box=\box88
+\l__siunitx_compound_count_int=\count444
+\l__siunitx_table_tmp_box=\box89
 \l__siunitx_table_tmp_dim=\dimen371
 \l__siunitx_table_column_width_dim=\dimen372
-\l__siunitx_table_integer_box=\box88
-\l__siunitx_table_decimal_box=\box89
-\l__siunitx_table_uncert_box=\box90
-\l__siunitx_table_before_box=\box91
-\l__siunitx_table_after_box=\box92
+\l__siunitx_table_integer_box=\box90
+\l__siunitx_table_decimal_box=\box91
+\l__siunitx_table_uncert_box=\box92
+\l__siunitx_table_before_box=\box93
+\l__siunitx_table_after_box=\box94
 \l__siunitx_table_before_dim=\dimen373
 \l__siunitx_table_carry_dim=\dimen374
-\l__siunitx_unit_tmp_int=\count444
-\l__siunitx_unit_position_int=\count445
-\l__siunitx_unit_total_int=\count446
+\l__siunitx_unit_tmp_int=\count445
+\l__siunitx_unit_position_int=\count446
+\l__siunitx_unit_total_int=\count447
 )
 \l__chemmacros_nmr_space_skip=\skip266
 Loading the chemmacros module `thermodynamics' ...
@@ -1185,8 +1195,8 @@ File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
 \MT@toks=\toks50
-\MT@tempbox=\box93
-\MT@count=\count447
+\MT@tempbox=\box95
+\MT@count=\count448
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
 \MT@prot@toks=\toks51
@@ -1195,7 +1205,7 @@ LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen375
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count448
+\MT@listname@count=\count449
  (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
@@ -1220,14 +1230,14 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
  (c:/texlive/2025/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count449
-\AM@pagebox=\box94
+\pdfpages@includegraphics@status=\count450
+\AM@pagebox=\box96
 \AM@global@opts=\toks52
-\AM@pagecnt=\count450
+\AM@pagecnt=\count451
 \AM@toc@title=\toks53
 \AM@lof@heading=\toks54
-\c@AM@survey=\count451
-\AM@templatesizebox=\box95
+\c@AM@survey=\count452
+\AM@templatesizebox=\box97
 ) (c:/texlive/2025/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language91
@@ -1235,8 +1245,8 @@ LaTeX Info: Redefining \_ on input line 43.
 ) (c:/texlive/2025/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
-\TP@textbox=\box96
-\TP@holdbox=\box97
+\TP@textbox=\box98
+\TP@holdbox=\box99
 \TPHorizModule=\dimen381
 \TPVertModule=\dimen382
 \TP@margin=\dimen383
@@ -1255,8 +1265,8 @@ Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
  (c:/texlive/2025/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip268
 \ABCIauxlen=\skip269
-\c@ABCIaux=\count452
-\c@ABCImax=\count453
+\c@ABCIaux=\count453
+\c@ABCImax=\count454
  (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -1268,35 +1278,33 @@ LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks56
 ) (c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count454
-\l__lipsum_a_int=\count455
-\l__lipsum_b_int=\count456
+\g__lipsum_par_int=\count455
+\l__lipsum_a_int=\count456
+\l__lipsum_b_int=\count457
  (c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (c:/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
-\c@tracingmulticols=\count457
-\mult@box=\box98
+\c@tracingmulticols=\count458
+\mult@box=\box100
 \multicol@leftmargin=\dimen388
-\c@unbalance=\count458
-\c@collectmore=\count459
-\doublecol@number=\count460
-\multicoltolerance=\count461
-\multicolpretolerance=\count462
+\c@unbalance=\count459
+\c@collectmore=\count460
+\doublecol@number=\count461
+\multicoltolerance=\count462
+\multicolpretolerance=\count463
 \full@width=\dimen389
 \page@free=\dimen390
 \premulticols=\dimen391
 \postmulticols=\dimen392
 \multicolsep=\skip271
 \multicolbaselineskip=\skip272
-\partial@page=\box99
-\last@line=\box100
-\mc@boxedresult=\box101
+\partial@page=\box101
+\last@line=\box102
+\mc@boxedresult=\box103
 \maxbalancingoverflow=\dimen393
-\mult@rightbox=\box102
-\mult@grightbox=\box103
-\mult@firstbox=\box104
-\mult@gfirstbox=\box105
-\@tempa=\box106
-\@tempa=\box107
+\mult@rightbox=\box104
+\mult@grightbox=\box105
+\mult@firstbox=\box106
+\mult@gfirstbox=\box107
 \@tempa=\box108
 \@tempa=\box109
 \@tempa=\box110
@@ -1331,20 +1339,22 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \@tempa=\box139
 \@tempa=\box140
 \@tempa=\box141
-\c@minrows=\count463
-\c@columnbadness=\count464
-\c@finalcolumnbadness=\count465
+\@tempa=\box142
+\@tempa=\box143
+\c@minrows=\count464
+\c@columnbadness=\count465
+\c@finalcolumnbadness=\count466
 \last@try=\dimen394
 \multicolovershoot=\dimen395
 \multicolundershoot=\dimen396
-\mult@nat@firstbox=\box142
-\colbreak@box=\box143
-\mc@col@check@num=\count466
-\g__mc_curr_col_int=\count467
+\mult@nat@firstbox=\box144
+\colbreak@box=\box145
+\mc@col@check@num=\count467
+\g__mc_curr_col_int=\count468
 ) (c:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip273
-\multirow@cntb=\count468
+\multirow@cntb=\count469
 \multirow@dima=\skip274
 \bigstrutjot=\dimen397
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
@@ -1353,23 +1363,23 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTright=\skip276
 \LTpre=\skip277
 \LTpost=\skip278
-\LTchunksize=\count469
+\LTchunksize=\count470
 \LTcapwidth=\dimen398
-\LT@head=\box144
-\LT@firsthead=\box145
-\LT@foot=\box146
-\LT@lastfoot=\box147
-\LT@gbox=\box148
-\LT@cols=\count470
-\LT@rows=\count471
-\c@LT@tables=\count472
-\c@LT@chunks=\count473
+\LT@head=\box146
+\LT@firsthead=\box147
+\LT@foot=\box148
+\LT@lastfoot=\box149
+\LT@gbox=\box150
+\LT@cols=\count471
+\LT@rows=\count472
+\c@LT@tables=\count473
+\c@LT@chunks=\count474
 \LT@p@ftn=\toks57
 ) (c:/texlive/2025/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
  (c:/texlive/2025/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box149
+\@tempboxb=\box151
 ) (c:/texlive/2025/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
@@ -1407,11 +1417,11 @@ Package: chemformula 2022/01/23 v4.17 typeset chemical compounds and reactions (
 \l__chemformula_tmpa_dim=\dimen399
 \l__chemformula_tmpb_dim=\dimen400
 \l__chemformula_tmpc_dim=\dimen401
-\l__chemformula_tmpa_int=\count474
-\l__chemformula_tmpb_int=\count475
-\l__chemformula_tmpc_int=\count476
-\l__chemformula_tmpa_box=\box150
-\l__chemformula_tmpb_box=\box151
+\l__chemformula_tmpa_int=\count475
+\l__chemformula_tmpb_int=\count476
+\l__chemformula_tmpc_int=\count477
+\l__chemformula_tmpa_box=\box152
+\l__chemformula_tmpb_box=\box153
 \l__chemformula_arrow_length_dim=\dimen402
 \l__chemformula_arrow_label_height_dim=\dimen403
 \l__chemformula_arrow_label_offset_dim=\dimen404
@@ -1443,12 +1453,12 @@ Package: chemformula 2022/01/23 v4.17 typeset chemical compounds and reactions (
 \l__chemformula_stoich_space_skip=\skip283
 \l__chemformula_math_space_skip=\skip284
 \l__chemformula_additions_symbol_space_skip=\skip285
-\l__chemformula_count_tokens_int=\count477
-\g__chemformula_lewis_int=\count478
-\l__chemformula_arrow_arg_i_box=\box152
-\l__chemformula_arrow_arg_ii_box=\box153
-\l__chemformula_superscript_box=\box154
-\l__chemformula_subscript_box=\box155
+\l__chemformula_count_tokens_int=\count478
+\g__chemformula_lewis_int=\count479
+\l__chemformula_arrow_arg_i_box=\box154
+\l__chemformula_arrow_arg_ii_box=\box155
+\l__chemformula_superscript_box=\box156
+\l__chemformula_subscript_box=\box157
 \l__chemformula_plus_space_skip=\skip286
 \l__chemformula_minus_space_skip=\skip287
 )
@@ -1456,12 +1466,14 @@ Package: chemformula 2022/01/23 v4.17 typeset chemical compounds and reactions (
 Package chemmacros Info: Using float defining method `float'.
 
 \@float@every@scheme=\toks58
-\c@scheme=\count479
+\c@scheme=\count480
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 219.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-No file ErickPreviato.aux.
+) (./ErickPreviato.aux (./USPSC-TA-PreTextual/USPSC-CapaICMC.aux)
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 36.
+ (./ErickPreviato-Dedicatoria.aux) (./ErickPreviato-Agradecimento.aux) (./ErickPreviato-Epigrafe.aux) (./ErickPreviato-Resumo.aux) (./ErickPreviato-Abstract.aux) (./ErickPreviato-Abreviaturas.aux) (./ErickPreviato-Cap-1.aux) (./ErickPreviato-Cap-2.aux) (./ErickPreviato-Cap-3.aux) (./ErickPreviato-Cap-4.aux))
 \openout1 = `ErickPreviato.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 219.
@@ -1482,18 +1494,18 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 219.
 LaTeX Font Info:    ... okay on input line 219.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 219.
 LaTeX Font Info:    ... okay on input line 219.
-(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count480
+\scratchcounter=\count481
 \scratchdimen=\dimen430
-\scratchbox=\box156
-\nofMPsegments=\count481
-\nofMParguments=\count482
+\scratchbox=\box158
+\nofMPsegments=\count482
+\nofMParguments=\count483
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count483
+\MPscratchCnt=\count484
 \MPscratchDim=\dimen431
-\MPnumerator=\count484
-\makeMPintoPDFobject=\count485
+\MPnumerator=\count485
+\makeMPintoPDFobject=\count486
 \everyMPtoPDFconversion=\toks60
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1502,10 +1514,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 219.
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 219.
 LaTeX Info: Redefining \degres on input line 219.
-\myptabbox=\box157
+\myptabbox=\box159
 \myptabboxwidth=\skip288
  (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-brazil.trsl
 File: translations-basic-dictionary-brazil.trsl (brazil translation file `translations-basic-dictionary')
@@ -1766,11 +1776,11 @@ Package pdftex.def Info: USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf , page1 us
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 13.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 13.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [7
 
@@ -1778,11 +1788,11 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 13.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 13.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [8
 
@@ -1793,11 +1803,11 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 16.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 16.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [9
 
@@ -1808,11 +1818,11 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 16.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 8.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 16.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [10
 
@@ -1850,10 +1860,6 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 
  (./ErickPreviato-Resumo.tex
 
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 7.
-
-
-
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
 Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 20.
@@ -1883,10 +1889,6 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 
  (./ErickPreviato-Abstract.tex
 
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 6.
-
-
-
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
 Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 21.
@@ -1911,9 +1913,7 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [16
 
-])
-No file ErickPreviato.lof.
-
+]) (./ErickPreviato.lof)
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -1938,9 +1938,7 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [18
 
-]
-No file ErickPreviato.lot.
-
+] (./ErickPreviato.lot)
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -1962,28 +1960,6 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [20
 
-] (./ErickPreviato.loq)
-
-File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
-<use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 370.
-(pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
-File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
-<use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 370.
-(pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[21]
-
-File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
-<use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 370.
-(pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
-File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
-<use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 370.
-(pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[22
-
 ]
 \openout2 = `ErickPreviato-Abreviaturas.aux'.
 
@@ -1991,11 +1967,36 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 10.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 11.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 10.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 11.
+(pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
+[21
+
+
+]
+
+File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
+<use USPSC-img/CapaICMC.jpg>
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 11.
+(pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
+File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
+<use USPSC-img/USPSC-PaginaEmBranco.jpg>
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 11.
+(pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
+[22
+
+]) (./ErickPreviato.toc)
+
+File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
+<use USPSC-img/CapaICMC.jpg>
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 389.
+(pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
+File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
+<use USPSC-img/USPSC-PaginaEmBranco.jpg>
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 389.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [23
 
@@ -2004,58 +2005,19 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 10.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 389.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 10.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 389.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
 [24
-
-])
-No file ErickPreviato.toc.
-
-
-File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
-<use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 389.
-(pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
-File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
-<use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 389.
-(pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[25
-
-
-]
-
-File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
-<use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 389.
-(pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
-File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
-<use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 389.
-(pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[26
 
 ]
 \openout2 = `ErickPreviato-Cap-1.aux'.
 
  (./ErickPreviato-Cap-1.tex
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Citation `bobo2019' on page 27 undefined on input line 11.
-
-
-LaTeX Warning: Citation `romero2020' on page 27 undefined on input line 13.
-
-
-LaTeX Warning: Citation `liu2012' on page 27 undefined on input line 15.
-
-
-LaTeX Warning: Citation `liu2020' on page 27 undefined on input line 15.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2069,14 +2031,10 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 18.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[27
+[25
 
 
-]
-
-LaTeX Warning: Reference `revisao' on page 28 undefined on input line 25.
-
-)
+])
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -2086,29 +2044,11 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 399.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[28]
+[26]
 \openout2 = `ErickPreviato-Cap-2.aux'.
 
  (./ErickPreviato-Cap-2.tex
 Cap\'{\i }tulo 2.
-
-LaTeX Warning: Citation `pang2004' on page 29 undefined on input line 11.
-
-
-LaTeX Warning: Citation `liu2012' on page 29 undefined on input line 11.
-
-
-LaTeX Warning: Citation `pang2004' on page 29 undefined on input line 13.
-
-
-LaTeX Warning: Citation `hu2004' on page 29 undefined on input line 18.
-
-
-LaTeX Warning: Citation `medhat2014' on page 29 undefined on input line 20.
-
-
-LaTeX Warning: Citation `pang2004' on page 29 undefined on input line 24.
-
 
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
@@ -2119,37 +2059,12 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 25.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[29
+[27
 
 
 
 
 ]
-
-LaTeX Warning: Citation `liu2012' on page 30 undefined on input line 26.
-
-
-LaTeX Warning: Citation `liu2012' on page 30 undefined on input line 28.
-
-
-LaTeX Warning: Citation `patel2024' on page 30 undefined on input line 33.
-
-
-LaTeX Warning: Citation `medhat2014' on page 30 undefined on input line 33.
-
-
-LaTeX Warning: Citation `shaukat2020' on page 30 undefined on input line 33.
-
-
-LaTeX Warning: Citation `hu2004' on page 30 undefined on input line 35.
-
-
-LaTeX Warning: Citation `liu2012' on page 30 undefined on input line 35.
-
-
-LaTeX Warning: Citation `islam2018' on page 30 undefined on input line 35.
-
-
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -2159,53 +2074,21 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 38.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[30]
+[28]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 44.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-LaTeX Warning: Citation `ganesan2022' on page 31 undefined on input line 44.
-
-
-LaTeX Warning: Citation `liu2012' on page 31 undefined on input line 45.
-
-
-LaTeX Warning: Citation `pang2004' on page 31 undefined on input line 46.
-
-
-LaTeX Warning: Citation `liu2012' on page 31 undefined on input line 47.
-
-
-LaTeX Warning: Citation `salgado2024' on page 31 undefined on input line 48.
-
-
-LaTeX Warning: Citation `souza2020' on page 31 undefined on input line 49.
-
-
-LaTeX Warning: Citation `devlin2019' on page 31 undefined on input line 57.
-
-
-
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 60.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 58.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 60.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 58.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[31{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-
-LaTeX Warning: Citation `koufakou2024' on page 32 undefined on input line 73.
-
-
-LaTeX Warning: Citation `shaik2023' on page 32 undefined on input line 75.
-
-
-LaTeX Warning: Citation `grljevic2022' on page 32 undefined on input line 77.
-
-)
+[29{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -2215,35 +2098,32 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 404.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[32]
+[30]
 \openout2 = `ErickPreviato-Cap-3.aux'.
 
  (./ErickPreviato-Cap-3.tex
 Cap\'{\i }tulo 3.
 
-LaTeX Warning: Reference `tab:categorias_avaliacao' on page 33 undefined on input line 32.
-
-
 Underfull \hbox (badness 1540) in paragraph at lines 41--41
 []|\T1/lmr/m/n/12 (+20) Características e con-di-ções de
  []
 
-
-Overfull \hbox (69.8532pt too wide) in paragraph at lines 38--45
- [][] 
- []
-
+<USPSC-img/dataset.jpg, id=322, 1264.725pt x 216.05719pt>
+File: USPSC-img/dataset.jpg Graphic file (type jpg)
+<use USPSC-img/dataset.jpg>
+Package pdftex.def Info: USPSC-img/dataset.jpg  used on input line 56.
+(pdftex.def)             Requested size: 455.30066pt x 77.78052pt.
 
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 52.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 58.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 52.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 58.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[33
+[31
 
 
 
@@ -2252,9 +2132,9 @@ Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.52 
+l.58 
      ]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 54.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 64.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -2264,45 +2144,40 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Reference `pre-processamento' on page 34 undefined on input line 56.
-
-
-LaTeX Warning: Reference `pre-processamento' on page 34 undefined on input line 65.
-
-
-
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 77.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 76.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 77.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 76.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[34]
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.76 
+      <./USPSC-img/dataset.jpg>]
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 100.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 106.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 100.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 106.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[35]
-Underfull \vbox (badness 2521) has occurred while \output is active []
-
-
+[33]
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
-Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 125.
+Package pdftex.def Info: USPSC-img/CapaICMC.jpg  used on input line 132.
 (pdftex.def)             Requested size: 596.44875pt x 845.04933pt.
 File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
-Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 125.
+Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 132.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[36])
+[34])
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -2312,7 +2187,7 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 408.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[37{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[35{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 \openout2 = `ErickPreviato-Cap-4.aux'.
 
  (./ErickPreviato-Cap-4.tex
@@ -2325,7 +2200,7 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 6.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[38
+[36
 
 
 
@@ -2342,7 +2217,7 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 413.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[39] (./ErickPreviato.bbl
+[37] (./ErickPreviato.bbl
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -2352,7 +2227,7 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 3.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[40
+[38
 
 
 
@@ -2372,7 +2247,7 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 79.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[41])
+[39])
 
 File: USPSC-img/CapaICMC.jpg Graphic file (type jpg)
 <use USPSC-img/CapaICMC.jpg>
@@ -2382,18 +2257,15 @@ File: USPSC-img/USPSC-PaginaEmBranco.jpg Graphic file (type jpg)
 <use USPSC-img/USPSC-PaginaEmBranco.jpg>
 Package pdftex.def Info: USPSC-img/USPSC-PaginaEmBranco.jpg  used on input line 453.
 (pdftex.def)             Requested size: 597.4799pt x 845.04517pt.
-[42]
+[40]
 \tf@lof=\write7
 \openout7 = `ErickPreviato.lof'.
 
 \tf@lot=\write8
 \openout8 = `ErickPreviato.lot'.
 
-\tf@loq=\write9
-\openout9 = `ErickPreviato.loq'.
-
-\tf@toc=\write10
-\openout10 = `ErickPreviato.toc'.
+\tf@toc=\write9
+\openout9 = `ErickPreviato.toc'.
 
  
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -2402,30 +2274,20 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package lastpage Warning: Rerun to get the references right on input line 453.
-
  ) 
 Here is how much of TeX's memory you used:
- 43959 strings out of 467748
- 935899 string characters out of 5431137
- 1452347 words of memory out of 5000000
- 71591 multiletter control sequences out of 15000+600000
- 701986 words of font info for 177 fonts, out of 8000000 for 9000
+ 44129 strings out of 467747
+ 939810 string characters out of 5431120
+ 1476297 words of memory out of 5000000
+ 71743 multiletter control sequences out of 15000+600000
+ 701740 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,107p,1156b,1455s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ErickPreviato.pdf (42 pages, 789983 bytes).
+ 99i,17n,107p,1158b,1455s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ErickPreviato.pdf (40 pages, 942022 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
- 421 compressed objects within 5 object streams
- 121 named destinations out of 1000 (max. 500000)
- 41826 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 500 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 41823 words of extra memory for PDF output out of 42996 (max. 10000000)
 

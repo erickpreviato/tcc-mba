@@ -18,17 +18,12 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-"t" can't follow a literal---line 1293 of file USPSC-classe/abntex2-alf-USPSC.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: ErickPreviato.bib
-Repeated entry---line 440 of file ErickPreviato.bib
- : @misc{devlin2019
- :                 ,
-I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -39,7 +34,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
 You've used 29 entries,
-            6708 wiz_defined-function locations,
+            6710 wiz_defined-function locations,
             1341 strings with 13635 characters,
 and the built_in function-call counts, 27551 in all, are:
 = -- 2960
@@ -79,4 +74,3 @@ warning$ -- 0
 while$ -- 125
 width$ -- 0
 write$ -- 299
-(There were 2 error messages)
