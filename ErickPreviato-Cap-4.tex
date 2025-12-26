@@ -14,8 +14,8 @@ aplicados à tarefa de análise de sentimentos de comentários de alunos sobre c
 Para garantir a confiabilidade dos resultados, o conjunto de dados processado foi dividido na proporção de 80\% para treinamento e 20\% para validação,
 utilizando estratificação para manter a distribuição original das classes, conforme descrito na Seção \ref{pre-processamento}.
 
-A avaliação dos modelos foi conduzida utilizando quatro métricas principais, escolhidas para oferecer uma visão holística do desempenho dos classificadores,
-especialmente considerando o possível desbalanceamento das classes. As métricas utilizadas foram: Acurácia, \textit{}, Coeficiente de Correlação de Matthews (MCC)
+A avaliação dos modelos foi conduzida utilizando quatro métricas principais, escolhidas para oferecer uma visão global do desempenho dos classificadores,
+especialmente considerando o possível desbalanceamento das classes. As métricas utilizadas foram: Acurácia, \textit{F1-Score}, Coeficiente de Correlação de Matthews (MCC)
 e Kappa de Cohen.
 
 \section{Comparativo de desempenho dos modelos}
@@ -32,7 +32,7 @@ métricas selecionadas.
     \label{tab:resultados_modelos}
     \begin{tabular}{lcccc}
         \toprule
-        \textbf{Modelo} & \textbf{Acurácia} & \textbf{\textit{F1-score}} & \textbf{MCC} & \textbf{Kappa} \\
+        \textbf{Modelo} & \textbf{Acurácia} & \textbf{\textit{F1-Score}} & \textbf{MCC} & \textbf{Kappa} \\
         \midrule
         BERTimbau-Base    & 0.880000 & 0.875245 & 0.800280 & 0.798613 \\
         BERTimbau-Large   & 0.906667 & 0.903733 & 0.845077 & 0.843959 \\
@@ -51,7 +51,7 @@ métricas selecionadas.
     \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
 \end{figure}
 
-Observa-se que o modelo BERTimbau-Large apresentou o melhor desempenho em todas as métricas avaliadas, alcançando uma acurácia de 90,67\% e um \textit{F1-score} de 90,37\%.
+Observa-se que o modelo BERTimbau-Large apresentou o melhor desempenho em todas as métricas avaliadas, alcançando uma acurácia de 90,67\% e um \textit{F1-Score} de 90,37\%.
 Este resultado corrobora a hipótese de que modelos pré-treinados especificamente em língua portuguesa, que é o caso do BERTimbau, 
 tendem a capturar melhor as nuances do idioma e, portanto, superar modelos multilíngues como o XLM-RoBERTa para tarefas específicas em português.
 
