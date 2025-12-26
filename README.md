@@ -48,7 +48,7 @@ PREVIATO, E. V. **Análise de sentimentos em avaliações de disciplinas: um est
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 **Erick Vansim Previato** *Cientista de Dados | Especialista em IA*
 [https://www.linkedin.com/in/erickpreviato](https://www.linkedin.com/in/erickpreviato)
 
