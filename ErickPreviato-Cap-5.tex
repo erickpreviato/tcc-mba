@@ -1,0 +1,36 @@
+% Capitulo 4
+
+% ----------------------------------------------------------
+% Conclusões e trabalhos futuros
+% ----------------------------------------------------------
+\chapter[Conclusões e trabalhos futuros]{Conclusões e trabalhos futuros}
+\label{Conclusões e trabalhos futuros}
+
+O presente trabalho atingiu seu objetivo principal ao desenvolver e avaliar classificadores automáticos 
+de sentimento para avaliações de disciplinas de uma Instituição de Ensino Superior, 
+utilizando técnicas de \textit{Transfer Learning} com modelos baseados em \textit{Transformers}.
+
+Os resultados obtidos demonstraram que a utilização de LLMs pré-treinados em português, 
+especificamente o BERTimbau, supera abordagens genéricas ou multilíngues para este domínio específico. 
+O modelo final alcançou uma acurácia de 90,67\% e um \textit{F1-Score} de 90,37\%, métricas consideradas satisfatórias para implementação em ambiente de produção.
+
+A análise de erros evidenciou que o principal desafio reside na classificação de comentários neutros ou ambíguos, 
+sugerindo que a subjetividade humana na rotulação dos dados de treino é um fator limitante que o modelo tende a reproduzir.
+
+
+\section{Contribuições}
+
+As principais contribuições deste estudo incluem a estruturação de um pipeline completo de PLN para dados educacionais, desde a limpeza até o \textit{fine-tuning}, 
+a validação empírica da superioridade de modelos pré-treinados em português sobre multilíngues para análise de feedback acadêmico, e a entrega de um classificador 
+capaz de processar grandes volumes de avaliações institucionais, permitindo aos gestores identificar gargalos pedagógicos com agilidade.
+
+
+\section{Trabalhos futuros}
+
+Para trabalhos futuros, sugere-se a exploração de técnicas de \textit{data augmentation} para aumentar a diversidade do conjunto de treinamento,
+especialmente para a classe neutra, que apresentou maior dificuldade de classificação. Além disso, a incorporação de modelos híbridos que 
+combinem \textit{Transformers} com abordagens baseadas em regras ou dicionários sentimentais pode ser investigada para melhorar a robustez do classificador. 
+Outra linha promissora é a adaptação do modelo para outras línguas e contextos educacionais, avaliando sua generalização e eficácia em diferentes ambientes acadêmicos.
+
+Além da análise de sentimentos, futuros estudos podem explorar a extração de tópicos, facilitando a identificação automática de temas recorrentes nas avaliações,
+o que pode fornecer percepções adicionais para a melhoria contínua dos cursos oferecidos pela instituição.

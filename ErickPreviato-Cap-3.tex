@@ -1,11 +1,6 @@
 % Capitulo 3
 
 
-% \section{Análise quantitativa}\label{analise-quantitativa}
-
-% Compreender a distribuição das notas e verificar a correlação entre as notas e a análise de sentimentos. Possíveis técnicas: estatísticas descritivas (média, mediana, moda, desvio padrão por pergunta/disciplina/ano), histogramas, boxplots, heatmaps de correlação, dentre outras.
-
-
 % ----------------------------------------------------------
 % Desenvolvimento
 % ----------------------------------------------------------
@@ -13,146 +8,207 @@
 \chapter[Desenvolvimento]{Desenvolvimento}
 \label{Desenvolvimento}
 
-Este capítulo detalha a metodologia de pesquisa empregada, abrangendo a descrição da base de dados utilizada, o processo de pré-processamento, a rotulação dos dados, o \textit{fine-tuning} dos Modelos de Linguagem de Grande Escala (LLMs) e, por fim, as métricas de avaliação de desempenho dos modelos classificadores de sentimento desenvolvidos.
+Este capítulo detalha a metodologia de pesquisa empregada, abrangendo a descrição da base de dados utilizada, o processo de pré-processamento, 
+a rotulação dos dados, o \textit{fine-tuning} dos Modelos de Linguagem de Grande Escala (LLMs) e, por fim, 
+as métricas de avaliação de desempenho dos modelos classificadores de sentimento desenvolvidos.
+
 
 \section{Descrição e Tratamento da Base de Dados}
 
-A base de dados utilizada neste trabalho é composta por cerca de 16.500 registros de avaliações anônimas de estudantes, coletadas no período de 2017 a 2023. Cada registro corresponde a uma avaliação individual, contendo informações referentes ao curso, disciplina, turma, data e hora da resposta, bem como as notas atribuídas e os comentários textuais dos alunos.
+A base de dados utilizada neste trabalho é composta por cerca de 16.500 registros de avaliações anônimas de estudantes, 
+coletadas no período de 2017 a 2023. Cada registro corresponde a uma avaliação individual, contendo informações referentes ao curso, 
+disciplina, turma, data e hora da resposta, bem como as notas atribuídas e os comentários textuais dos alunos.
+
 
 \subsection{Estrutura dos Dados}
 
 O \textit{dataset} apresenta a seguinte estrutura de colunas:
 
 \begin{itemize}
-    \item \textbf{Identificadores e Contexto:} ID (identificador único), Curso, Disciplina, Turma e Data/Hora (momento do preenchimento).
-    \item \textbf{Notas Quantitativas (C1 a C14):} 14 colunas contendo notas inteiras de 1 a 5, distribuídas em três categorias de avaliação.
-    \item \textbf{Comentários Qualitativos (C15, C16, C17):} 3 colunas de texto livre, que são o foco da análise de sentimentos.
+    \item Identificadores e Contexto: ID (identificador único), Curso, Disciplina, Turma e Data/Hora do preenchimento.
+    \item Notas Quantitativas (C1 a C14): 14 colunas contendo notas inteiras de 1 a 5, distribuídas em três categorias de avaliação.
+    \item Comentários Qualitativos (C15, C16, C17): 3 colunas de texto livre, que são o foco da análise de sentimentos.
 \end{itemize}
 
 As três categorias de avaliação são apresentadas na Tabela~\ref{tab:categorias_avaliacao}.
 
 \begin{table}[H]
-\centering
-\caption{Categorias de avaliação e seus respectivos critérios}
-\label{tab:categorias_avaliacao}
-\begin{tabular}{|c|c|c|p{6cm}|}
-\hline
-\textbf{Categoria} & \textbf{Notas} & \textbf{Comentário} & \textbf{Contexto} \\ \hline
-I & C1, C2, C3 & C15 & Características e condições de oferta da disciplina \\ \hline
-II & C4 a C9 & C16 & Práticas e atividades do docente na disciplina \\ \hline
-III & C10 a C14 & C17 & Autoavaliação na disciplina \\ \hline
-\end{tabular}
+    \centering
+    \caption{Categorias de avaliação e seus respectivos critérios}
+    \label{tab:categorias_avaliacao}
+    \begin{tabular}{|c|c|c|p{6cm}|}
+        \hline
+        \textbf{Categoria} & \textbf{Notas} & \textbf{Comentário} & \textbf{Contexto} \\ \hline
+        I & C1, C2, C3 & C15 & Características e condições de oferta da disciplina \\ \hline
+        II & C4 a C9 & C16 & Práticas e atividades do docente na disciplina \\ \hline
+        III & C10 a C14 & C17 & Autoavaliação na disciplina \\ \hline
+    \end{tabular}
+    \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
 \end{table}
 
-As colunas C15, C16 e C17 são o foco principal deste estudo, pois contêm os textos utilizados na análise de sentimentos. As demais colunas são utilizadas como atributos de apoio, podendo contribuir para a contextualização dos sentimentos expressos pelos estudantes.
+As colunas C15, C16 e C17 são o foco principal deste estudo, pois contêm os textos utilizados na análise de sentimentos. 
+As demais colunas são utilizadas como atributos de apoio, podendo contribuir para a contextualização dos sentimentos expressos pelos estudantes.
 
-A Figura~\ref{img:dataset} representa uma amostra do \textit{dataset} para exemplificar a estrutura dos dados.
-% Inserir uma imagem
+As Figuras~\ref{img:dataset1} e ~\ref{img:dataset2} apresentam amostras do \textit{dataset} para exemplificar a estrutura dos dados.
+
 \graphicspath{ {USPSC-img/} }
-\begin{figure}[h]
-\caption{Amostra do \textit{dataset}}
-\label{img:dataset}
-\centering
-\includegraphics[scale=0.36]{dataset}
+\begin{figure}[H]
+    \caption{Amostra do \textit{dataset} - Parte 1}
+    \label{img:dataset1}
+    \centering
+    \includegraphics[width=0.9\textwidth]{dataset-1}
+    \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
 \end{figure}
+
+\begin{figure}[H]
+    \caption{Amostra do \textit{dataset} - Parte 2}
+    \label{img:dataset2}
+    \centering
+    \includegraphics[width=0.9\textwidth]{dataset-2}
+    \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
+\end{figure}
+
 
 \subsection{Tratamento dos Dados}
 
-O processo de tratamento dos dados foi conduzido com o objetivo de garantir a qualidade e a consistência das informações textuais antes da aplicação das técnicas de Processamento de Linguagem Natural (PLN). As etapas de tratamento seguiram os seguintes passos.
+O processo de tratamento dos dados foi conduzido com o objetivo de garantir a qualidade e a consistência das informações textuais antes da 
+aplicação das técnicas de Processamento de Linguagem Natural (PLN). As etapas de tratamento seguiram os seguintes passos.
 
 \begin{itemize}
-    \item \textbf{Verificação de dados ausentes:} realizou-se uma inspeção para identificar e tratar valores nulos (\texttt{NaN}) ou vazios, especialmente nas colunas de texto (C15, C16 e C17). Caso os três comentários fossem ausentes, o registro era descartado;
-    \item \textbf{Uniformização de tipos de dados:} garantiu-se que as colunas de datas (Data Hora) estivessem no formato de data/hora adequado e que as notas (C1 a C14) fossem tratadas como variáveis numéricas (inteiros);
-    \item \textbf{Limpeza de texto:} embora o pré-processamento mais detalhado ocorra na Seção~\ref{pre-processamento}, uma limpeza inicial no texto livre incluiu a remoção de caracteres especiais não informativos ou pontuações excessivas (ex.: “!!!!!”), conversão para letras minúsculas e exclusão de emoticons ou emojis, que não foram observados na base.
+    \item Verificação de dados ausentes: realizou-se uma inspeção para identificar e tratar valores nulos (\texttt{NaN}) ou vazios, 
+        especialmente nas colunas de texto (C15, C16 e C17). Caso os três comentários fossem ausentes, o registro era descartado;
+    \item Uniformização de tipos de dados: garantiu-se que as colunas de datas (Data Hora) estivessem no formato de data/hora adequado 
+        e que as notas (C1 a C14) fossem tratadas como variáveis numéricas (inteiros);
+    \item Limpeza de texto: embora o pré-processamento mais detalhado ocorra na Seção~\ref{pre-processamento}, 
+        uma limpeza inicial no texto livre incluiu a remoção de caracteres especiais não informativos ou pontuações excessivas (ex.: “!!!!!”), 
+        conversão para letras minúsculas e tratamento de \textit{emoticons} ou \textit{emojis}, que não foram observados na base.
 \end{itemize}
 
 Esses procedimentos visaram reduzir a dimensionalidade do texto e eliminar ruídos que poderiam comprometer o desempenho dos modelos de aprendizado de máquina.
 
+
 \subsection{Separação de Dados para Rotulação Manual}
 
-Para o treinamento dos modelos de classificação, é imprescindível um conjunto de dados com sentimento pré-rotulado. Uma amostra de aproximadamente 500 registros foi extraída da base de dados principal, buscando representar a diversidade temporal (2017–2023), de cursos e disciplinas, a fim de evitar viés em subconjuntos específicos.
+Para o treinamento dos modelos de classificação, é imprescindível um conjunto de dados com sentimento pré-rotulado. Uma amostra de 
+aproximadamente 500 registros foi extraída da base de dados principal, buscando representar a diversidade temporal (2017–2023), de cursos e disciplinas, 
+a fim de evitar viés em subconjuntos específicos.
 
-Essa amostra foi exportada para um novo arquivo \texttt{.csv}, contendo as colunas com os comentários (C15, C16 e C17). Este arquivo serviu como base para o pré-processamento descrito na Seção~\ref{pre-processamento}, no qual foram adicionadas as colunas de sentimento (\texttt{Sentimento\_C15}, \texttt{Sentimento\_C16} e \texttt{Sentimento\_C17}) com os valores \textit{negativo}, \textit{neutro} e \textit{positivo}.
+Essa amostra foi exportada para um novo arquivo \texttt{.csv}, contendo as colunas com os comentários, C15, C16 e C17. 
+Este arquivo serviu como base para o pré-processamento descrito na Seção~\ref{pre-processamento}, 
+no qual foram adicionadas novas colunas, Sentimento\_C15, Sentimento\_C16 e Sentimento\_C17 para armazenar os rótulos de 
+sentimento (negativo, neutro e positivo) em cada uma delas.
+
 
 \section{Pré-processamento e Rotulação dos Dados}
 \label{pre-processamento}
 
 Esta seção detalha as etapas de pré-processamento e a estratégia de rotulação empregada para a criação do \textit{dataset} de treinamento.
 
+
 \subsection{Pré-processamento de Texto}
 
-O pré-processamento do texto livre é crucial para otimizar o desempenho dos modelos de \textit{Machine Learning} e LLMs. Os seguintes passos foram aplicados às colunas C15, C16 e C17:
+O pré-processamento do texto livre é crucial para otimizar o desempenho dos modelos de \textit{Machine Learning} e LLMs. 
+Os seguintes passos foram aplicados às colunas C15, C16 e C17:
 
 \begin{itemize}
-    \item \textbf{Remoção de \textit{stop words}:} eliminação de palavras comuns da língua portuguesa que não agregam valor ao sentimento (ex.: de, a, o, um, uma);
-    \item \textbf{Tokenização:} divisão do texto em unidades menores (palavras ou subpalavras) que os modelos conseguem processar;
-    \item \textbf{Lematização/Stemming:} redução das palavras às suas raízes (lematização) ou radicais (stemming) para tratar variações morfológicas (ex.: “estudando”, “estudou”, “estuda” → “estudar”);
-    % \item \textbf{Tratamento de negações:} manutenção da informação de negação, fundamental para a análise de sentimento (ex.: transformar “não gostei” em “não\_gostei” ou preservar “não” como token relevante).
+    \item Remoção de \textit{stop words}: eliminação de palavras comuns da língua portuguesa que não agregam valor ao sentimento (ex.: de, a, o, um, uma);
+    \item Tokenização: divisão do texto em unidades menores (palavras ou subpalavras) que os modelos conseguem processar;
+    \item Lematização/\textit{Stemming}: redução das palavras às suas raízes (lematização) ou radicais (\textit{stemming}) 
+        para tratar variações morfológicas (ex.: ``estudando'', ``estudou'', ``estuda'' para ``estudar'');
 \end{itemize}
+
 
 \subsection{Rotulação Auxiliada por LLM}
 
-A rotulação manual de 500 registros é um processo custoso em tempo. Para otimizar e agilizar o processo, utilizou-se uma estratégia de pré-classificação com LLM, seguida por validação humana.
+A rotulação manual de 500 registros é um processo custoso em tempo. Para otimizar e agilizar o processo, utilizou-se uma estratégia de pré-classificação com LLM, 
+seguida por validação humana. 
 
-Essa pré-classificação foi realizada com o auxílio do modelo Gemini, que analisou os comentários das colunas C15, C16 e C17 e atribuiu rótulos de sentimento (\textit{negativo}, \textit{neutro} ou \textit{positivo}). Isso gerou três novas colunas: \texttt{Sentimento\_C15}, \texttt{Sentimento\_C16} e \texttt{Sentimento\_C17}.
+Essa pré-classificação foi realizada com o auxílio do modelo Gemini, que analisou os comentários das colunas C15, C16 e C17 e atribuiu 
+rótulos de sentimento positivo, negativo ou neutro. 
+Isso gerou três novas colunas, Sentimento\_C15, Sentimento\_C16 e Sentimento\_C17, contendo as classificações preliminares.
 
-A validação humana foi então conduzida sobre os 500 registros, ajustando classificações ambíguas ou incorretas e garantindo que os rótulos refletissem fielmente o contexto acadêmico e a intenção do aluno.
+A validação humana foi então conduzida sobre os 500 registros, ajustando classificações ambíguas ou incorretas e 
+garantindo que os rótulos refletissem fielmente o contexto acadêmico e a intenção do aluno.
 
 Ao final desta etapa, obteve-se um \textit{dataset} rotulado, pronto para ser utilizado no treinamento e \textit{fine-tuning} dos modelos.
 
+
 \subsection{Preparação para o Treinamento do Modelo}
 
-Com os dados rotulados, a base foi dividida em dois subconjuntos: 80\% para treinamento e 20\% para validação. Essa divisão visa garantir um balanceamento adequado entre a capacidade de aprendizado e a generalização dos modelos.
+Com os dados rotulados, a base foi dividida em dois subconjuntos: 80\% para treinamento e 20\% para validação. 
+Essa divisão visa garantir um balanceamento adequado entre a capacidade de aprendizado e a generalização dos modelos.
+
 
 \subsection{Modelagem e Fine-Tuning dos Modelos de Linguagem}
 
-Após o pré-processamento e rotulação, aplicou-se a técnica de \textit{Fine-Tuning} (ajuste fino) para adaptar modelos pré-treinados de arquitetura Transformer ao domínio específico dos comentários acadêmicos em português. Foram empregados dois modelos de referência, ambos pré-treinados em grandes corpora de texto em língua portuguesa: o BERTimbau e o RoBERTa (variantes em português).
+Após o pré-processamento e rotulação, aplicou-se a técnica de \textit{fine-tuning} para adaptar 
+modelos pré-treinados de arquitetura \textit{Transformer} ao domínio específico dos comentários acadêmicos em português. 
+Foram empregados dois modelos de referência, ambos pré-treinados em grandes corpora de texto em língua portuguesa: o BERTimbau e o RoBERTa (variantes em português).
 
-O objetivo do \textit{fine-tuning} foi gerar dois modelos classificadores otimizados, capazes de identificar sentimentos (\textit{negativo}, \textit{neutro}, \textit{positivo}) nos comentários das avaliações realizadas pelos alunos.
+O objetivo do \textit{fine-tuning} foi gerar dois modelos classificadores otimizados, 
+capazes de identificar sentimentos nos comentários das avaliações realizadas pelos alunos e classificá-los em positivo, negativo ou neutro.
+
 
 \section{Avaliação dos Modelos Classificadores}
 
-A performance dos modelos (BERTimbau e RoBERTa, após \textit{fine-tuning}) foi avaliada utilizando métricas padrão de classificação, calculadas a partir da Matriz de Confusão.
+A performance dos modelos BERTimbau e RoBERTa, após \textit{fine-tuning}, foi avaliada utilizando métricas padrão de classificação, 
+calculadas a partir da Matriz de Confusão.
+
 
 \subsection{Matriz de Confusão e Métricas de Desempenho}
 
-A Matriz de Confusão é uma tabela que permite visualizar o desempenho de um algoritmo de classificação, indicando o número de classificações corretas e incorretas por classe. Os termos-chave utilizados são:
+A Matriz de Confusão é uma tabela que permite visualizar o desempenho de um algoritmo de classificação, 
+indicando o número de classificações corretas e incorretas por classe. Os termos-chave utilizados são:
 
 \begin{itemize}
-    \item \textbf{Verdadeiros Positivos (VP):} instâncias positivas classificadas corretamente como positivas;
-    \item \textbf{Verdadeiros Negativos (VN):} instâncias negativas classificadas corretamente como negativas;
-    \item \textbf{Falsos Positivos (FP):} instâncias negativas classificadas incorretamente como positivas (Erro Tipo I);
-    \item \textbf{Falsos Negativos (FN):} instâncias positivas classificadas incorretamente como negativas (Erro Tipo II).
+    \item Verdadeiros Positivos (VP): instâncias positivas classificadas corretamente como positivas;
+    \item Verdadeiros Negativos (VN): instâncias negativas classificadas corretamente como negativas;
+    \item Falsos Positivos (FP): instâncias negativas classificadas incorretamente como positivas (Erro Tipo I);
+    \item Falsos Negativos (FN): instâncias positivas classificadas incorretamente como negativas (Erro Tipo II).
 \end{itemize}
 
 Com base na Matriz de Confusão, as métricas que foram utilizadas para comparar a eficácia dos classificadores são descritas a seguir.
 
-\textbf{Acurácia (Accuracy)}. Mede a proporção de predições corretas em relação ao total de instâncias. É uma métrica simples, mas pode ser enganosa em casos de desequilíbrio de classes.
-
+Acurácia (\textit{Accuracy}). Mede a proporção de predições corretas em relação ao total de instâncias. 
+É uma métrica simples, mas pode ser enganosa em casos de desequilíbrio de classes.
 $$\text{Acurácia} = \frac{VP + VN}{VP + VN + FP + FN}$$
+% Referência: Powers, D. M. (2011). Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation. Journal of Machine Learning Technologies, 2(1), 37-63.
 
-\textbf{Precisão (Precision)}. Mede a proporção de instâncias classificadas como Positivas que são realmente Positivas. Responde à pergunta: "Das que o modelo classificou como Positivas, quantas estavam corretas?".
+Precisão (\textit{Precision}). Mede a proporção de instâncias classificadas como Positivas que são realmente Positivas. 
+Responde à pergunta: ``Das que o modelo classificou como Positivas, quantas estavam corretas?''.
 $$\text{Precisão} = \frac{VP}{VP + FP}$$
+% Referência: Sokolova, M., & Lapalme, G. (2009). A systematic analysis of performance measures for classification tasks. Information Processing & Management, 45(4), 427-437.
 
-\textbf{Revocação (Recall ou Sensibilidade)}. Mede a proporção de instâncias Positivas que foram corretamente identificadas. Responde à pergunta: "Das que são realmente Positivas, quantas o modelo identificou?".
+Revocação (\textit{Recall} ou Sensibilidade). Mede a proporção de instâncias Positivas que foram corretamente identificadas. 
+Responde à pergunta: ``Das que são realmente Positivas, quantas o modelo identificou?''.
 $$\text{Revocação} = \frac{VP}{VP + FN}$$
+% Referência: Sokolova, M., & Lapalme, G. (2009). A systematic analysis of performance measures for classification tasks. Information Processing & Management, 45(4), 427-437.
 
-\textbf{Métrica F1 (F1-Score)}. É a média harmônica da Precisão e da Revocação, sendo uma métrica que busca um equilíbrio entre ambas. É particularmente útil em casos de desequilíbrio de classes, onde se deseja que o modelo tenha tanto alta precisão quanto alta revocação.
+Métrica F1 (\textit{F1-Score}). É a média harmônica da Precisão e da Revocação, sendo uma métrica que busca um equilíbrio entre ambas. 
+É particularmente útil em casos de desequilíbrio de classes, onde se deseja que o modelo tenha tanto alta precisão quanto alta revocação.
 $$\text{F1-Score} = 2 \cdot \frac{\text{Precisão} \cdot \text{Revocação}}{\text{Precisão} + \text{Revocação}}$$
+% Referência: Sokolova, M., & Lapalme, G. (2009). A systematic analysis of performance measures for classification tasks. Information Processing & Management, 45(4), 427-437.
 
+Coeficiente de Correlação de Matthews (MCC). Mede a qualidade das classificações binárias, levando em conta verdadeiros e falsos positivos e negativos.
+É uma métrica robusta, especialmente em casos de classes desbalanceadas.
+$$\text{MCC} = \frac{(VP \cdot VN) - (FP \cdot FN)}{\sqrt{(VP + FP)(VP + FN)(VN + FP)(VN + FN)}}$$
+% Referência: Matthews, B. W. (1975). Comparison of the predicted and observed secondary structure of T4 phage lysozyme. Biochimica et Biophysica Acta (BBA)-Protein Structure, 405(2), 442-451.
 
-% \begin{align}
-% \text{Acurácia} &= \frac{VP + VN}{VP + VN + FP + FN} \\[4pt]
-% \text{Precisão} &= \frac{VP}{VP + FP} \\[4pt]
-% \text{Revocação (Recall)} &= \frac{VP}{VP + FN} \\[4pt]
-% \text{F1-Score} &= 2 \cdot \frac{\text{Precisão} \cdot \text{Revocação}}{\text{Precisão} + \text{Revocação}}
-% \end{align}
+Kappa de Cohen. Mede o grau de concordância entre as predições do modelo e os rótulos reais, ajustando para a concordância que poderia ocorrer por acaso. 
+$$\text{Kappa} = \frac{P_o - P_e}{1 - P_e}$$
+onde \(P_o\) é a proporção de observações concordantes e \(P_e\) é a proporção esperada de concordância por acaso.
+% Referência: Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and psychological measurement, 20(1), 37-46.
 
 Essas métricas permitem avaliar a capacidade dos modelos em classificar corretamente os sentimentos, considerando o equilíbrio entre falsos positivos e falsos negativos.
 
+
 \section{Conclusão}
 
-Este capítulo apresentou a metodologia adotada para o desenvolvimento dos modelos classificadores de sentimento, desde a descrição e tratamento da base de dados, passando pelo pré-processamento e rotulação, até o \textit{fine-tuning} dos modelos e a avaliação de seu desempenho. As etapas descritas garantem a robustez do processo e a confiabilidade dos resultados obtidos, que serão discutidos no próximo capítulo.
+Este capítulo apresentou a metodologia adotada para o desenvolvimento dos modelos classificadores de sentimento, 
+desde a descrição e tratamento da base de dados, passando pelo pré-processamento e rotulação, 
+até o \textit{fine-tuning} dos modelos e a avaliação de seu desempenho.
+As etapas descritas garantem a robustez do processo e a confiabilidade dos resultados obtidos, 
+que serão discutidos no próximo capítulo.
 
 
 

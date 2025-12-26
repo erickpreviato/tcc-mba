@@ -13,6 +13,7 @@ A level-1 auxiliary file: ErickPreviato-Cap-1.aux
 A level-1 auxiliary file: ErickPreviato-Cap-2.aux
 A level-1 auxiliary file: ErickPreviato-Cap-3.aux
 A level-1 auxiliary file: ErickPreviato-Cap-4.aux
+A level-1 auxiliary file: ErickPreviato-Cap-5.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -35,7 +36,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 29 entries,
             6710 wiz_defined-function locations,
-            1341 strings with 13635 characters,
+            1342 strings with 13658 characters,
 and the built_in function-call counts, 27551 in all, are:
 = -- 2960
 > -- 544

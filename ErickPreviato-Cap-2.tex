@@ -6,18 +6,34 @@
 \chapter[Revisão Bibliográfica]{Revisão Bibliográfica}
 \label{revisao}
 
+
 \section{Análise de Sentimentos}\label{analise-sentimentos}
 
-A Análise de Sentimentos, ou \textit{Opinion Mining}, é um subcampo do Processamento de Linguagem Natural (PLN) que se dedica à identificação e extração da polaridade (positiva, negativa, neutra) e da subjetividade de textos, classificando-os de acordo com o sentimento expresso \cite{pang2004}. O objetivo principal é determinar a atitude de um autor em relação a um tópico, produto, serviço ou entidade. Essa atitude pode ser um julgamento ou avaliação, um estado emocional, como raiva ou alegria, ou a intenção comunicativa, como a compra de um produto, por exemplo \cite{liu2012}.
+A Análise de Sentimentos, ou \textit{Opinion Mining}, é um subcampo do Processamento de Linguagem Natural (PLN) que se dedica 
+à identificação e extração da polaridade (positiva, negativa, neutra) e da subjetividade de textos, classificando-os de acordo 
+com o sentimento expresso \cite{pang2004}. O objetivo principal é determinar a atitude de um autor em relação a um tópico, 
+produto, serviço ou entidade. Essa atitude pode ser um julgamento ou avaliação, um estado emocional, como raiva ou alegria, 
+ou a intenção comunicativa, como a compra de um produto, por exemplo \cite{liu2012}.
 
-A origem da análise de sentimentos pode ser traçada até o início dos anos 2000, impulsionada pelo crescimento exponencial da internet e o consequente aumento na produção de conteúdo textual, como avaliações de produtos, posts em blogs e fóruns de discussão \cite{pang2004}. Embora o estudo da opinião em textos não seja um conceito novo, a abordagem computacional para extrair e resumir essas opiniões ganhou destaque com o advento de técnicas de Aprendizado de Máquina e o volume massivo de dados disponíveis. Os trabalhos pioneiros de Pang, Lee e Vaithyanathan (2002) e Turney (2002) são frequentemente citados como marcos iniciais nesse campo, demonstrando a viabilidade de aplicar algoritmos de aprendizado supervisionado para classificar a polaridade de textos.
+A origem da análise de sentimentos pode ser traçada até o início dos anos 2000, impulsionada pelo crescimento exponencial da 
+internet e o consequente aumento na produção de conteúdo textual, como avaliações de produtos, posts em blogs e fóruns de 
+discussão \cite{pang2004}. Embora o estudo da opinião em textos não seja um conceito novo, a abordagem computacional para 
+extrair e resumir essas opiniões ganhou destaque com o advento de técnicas de Aprendizado de Máquina e o volume massivo de dados disponíveis. 
+Os trabalhos pioneiros de Pang, Lee e Vaithyanathan (2002) e Turney (2002) são frequentemente citados como marcos iniciais nesse campo, 
+demonstrando a viabilidade de aplicar algoritmos de aprendizado supervisionado para classificar a polaridade de textos.
 
 
 \subsection{Tipos e Níveis de Análise de Sentimentos}
 
-A análise de sentimentos pode ser categorizada em diferentes tipos e níveis de granularidade, dependendo do objetivo e da profundidade da análise desejada. A Análise de Sentimentos Baseada em Léxico utiliza léxicos (listas de palavras) pré-definidos, onde cada léxico é associado a uma pontuação de sentimento (positiva, negativa ou neutra). O sentimento de um texto é então calculado com base na soma ou média das pontuações das palavras presentes no texto \cite{hu2004}. Embora simples e eficaz para muitas aplicações, sua principal limitação reside na incapacidade de lidar com ironia, sarcasmo e o contexto em que as palavras são utilizadas.
+A análise de sentimentos pode ser categorizada em diferentes tipos e níveis de granularidade, dependendo do objetivo e da profundidade 
+da análise desejada. A Análise de Sentimentos Baseada em Léxico utiliza léxicos (listas de palavras) pré-definidos, 
+onde cada léxico é associado a uma pontuação de sentimento (positiva, negativa ou neutra). O sentimento de um texto é então calculado 
+com base na soma ou média das pontuações das palavras presentes no texto \cite{hu2004}. Embora simples e eficaz para muitas aplicações, 
+sua principal limitação reside na incapacidade de lidar com ironia, sarcasmo e o contexto em que as palavras são utilizadas.
 
-A Análise de Sentimentos Baseada em Aprendizado de Máquina utiliza algoritmos de aprendizado de máquina, supervisionado ou não supervisionado, para classificar o sentimento de um texto. Modelos são treinados em grandes conjuntos de dados rotulados, no caso supervisionado, para aprender a associar características do texto a uma polaridade de sentimento \cite{medhat2014}.
+A Análise de Sentimentos Baseada em Aprendizado de Máquina utiliza algoritmos de aprendizado de máquina, supervisionado ou não supervisionado, 
+para classificar o sentimento de um texto. Modelos são treinados em grandes conjuntos de dados rotulados, no caso supervisionado, 
+para aprender a associar características do texto a uma polaridade de sentimento \cite{medhat2014}.
 
 Em relação aos níveis de granularidade, a análise de sentimentos pode ser realizada em três níveis: nível de documento, nível de sentença e nível de aspecto ou entidade. 
 
@@ -30,33 +46,58 @@ Já no nível de aspecto, o mais granular, foca na identificação do sentimento
 
 \subsection{Aprendizado Supervisionado e Não Supervisionado na Análise de Sentimentos}
 
-A escolha entre abordagens de Aprendizado Supervisionado e Não Supervisionado é fundamental na construção de um modelo de análise de sentimentos robusto e efetivo. A frente de Aprendizado Supervisionado requer um conjunto de dados rotulados, onde cada exemplo de texto já possui uma polaridade de sentimento predefinida, seja ela positiva, negativa ou ainda neutra. O algoritmo aprende a mapear características do texto a partir desses rótulos \cite{patel2024}. A vantagem é que geralmente resulta em modelos com maior precisão quando há dados rotulados de alta qualidade e em quantidade suficiente. Já a desvantagem é com relação à rotulagem de dados, pois é um processo demorado e custoso, especialmente para grandes volumes de texto \cite{medhat2014}. Algoritmos populares na vertente de Aprendizado Supervisionado são: Máquinas de Vetores de Suporte (SVM), \textit{Naive Bayes}, Regressão Logística, Redes Neurais e Árvores de Decisão \cite{shaukat2020}.
+A escolha entre abordagens de Aprendizado Supervisionado e Não Supervisionado é fundamental na construção de um modelo de análise de 
+sentimentos robusto e efetivo. A frente de Aprendizado Supervisionado requer um conjunto de dados rotulados, onde cada exemplo de texto 
+já possui uma polaridade de sentimento predefinida, seja ela positiva, negativa ou neutra. O algoritmo aprende a mapear características 
+do texto a partir desses rótulos \cite{patel2024}. A vantagem é que geralmente resulta em modelos com maior precisão quando há dados rotulados 
+de alta qualidade e em quantidade suficiente. Já a desvantagem é com relação à rotulagem de dados, pois é um processo demorado e custoso, 
+especialmente para grandes volumes de texto \cite{medhat2014}. Algoritmos populares na vertente de Aprendizado Supervisionado são: 
+Máquinas de Vetores de Suporte (SVM), \textit{Naive Bayes}, Regressão Logística, Redes Neurais e Árvores de Decisão \cite{shaukat2020}.
     
-O Aprendizado Não Supervisionado não requer um conjunto de dados rotulados. Algoritmos desta família buscam padrões e estruturas inerentes aos dados para inferir o sentimento. Métodos baseados em léxico são exemplos de abordagens não supervisionadas, onde a polaridade é inferida a partir de dicionários de sentimentos \cite{hu2004}. Outras técnicas, como modelagem de tópicos, podem ser usadas para identificar temas e associar sentimentos a eles. Uma vantagem é que não exige o esforço de rotulagem manual, tornando-o mais escalável para grandes volumes de dados. Já a desvantagem é que pode apresentar menor precisão em comparação com abordagens supervisionadas e tem dificuldade em capturar nuances de linguagem, como sarcasmo e negação \cite{liu2012}. Algoritmos clássicos na frente de Aprendizado Não Supervisionado são: Análise de Componentes Principais (PCA), \textit{K-Means} (para agrupamento de textos por sentimento implícito) e Modelagem de Tópicos como o \textit{Latent Dirichlet Allocation} (LDA) \cite{islam2018}.
+O Aprendizado Não Supervisionado não requer um conjunto de dados rotulados. Algoritmos desta família buscam padrões e estruturas inerentes 
+aos dados para inferir o sentimento. Métodos baseados em léxico são exemplos de abordagens não supervisionadas, onde a polaridade é inferida 
+a partir de dicionários de sentimentos \cite{hu2004}. Outras técnicas, como modelagem de tópicos, podem ser usadas para identificar temas e 
+associar sentimentos a eles. Uma vantagem é que não exige o esforço de rotulagem manual, tornando-o mais escalável para grandes volumes de dados. 
+Já a desvantagem é que pode apresentar menor precisão em comparação com abordagens supervisionadas e tem dificuldade em capturar nuances de linguagem, 
+como sarcasmo e negação \cite{liu2012}. Algoritmos clássicos na frente de Aprendizado Não Supervisionado são: Análise de Componentes Principais (PCA), 
+\textit{K-Means} (para agrupamento de textos por sentimento implícito) e Modelagem de Tópicos como o \textit{Latent Dirichlet Allocation} (LDA) \cite{islam2018}.
 
-Para o contexto das avaliações de disciplinas, onde a rotulagem manual de 8 mil comentários seria um processo exaustivo, a consideração de abordagens não supervisionadas ou a combinação com técnicas semi-supervisionadas (onde uma pequena parte dos dados é rotulada manualmente e usada para treinar um modelo inicial) pode ser uma estratégia viável. Porém, caso haja possibilidade de utilizar a abordagem supervisionada, ou seja, caso não tenha um custo muito elevado para realizar a rotulagem dos dados, pode-se tornar uma estratégia mais assertiva.
+Para o contexto das avaliações de disciplinas, onde a rotulagem manual de 8 mil comentários seria um processo exaustivo, a consideração de abordagens 
+não supervisionadas ou a combinação com técnicas semi-supervisionadas, onde uma pequena parte dos dados é rotulada manualmente e usada para treinar um modelo inicial, 
+pode ser uma estratégia viável. Porém, caso haja possibilidade de utilizar a abordagem supervisionada, ou seja, caso não tenha um custo muito elevado para 
+realizar a rotulagem dos dados, pode-se tornar uma estratégia mais assertiva.
 
 
 \subsection{Fatores Importantes na Análise de Sentimentos}
 
 A aplicação da análise de sentimentos não é trivial e envolve a consideração de diversos fatores que podem impactar a precisão e a utilidade dos resultados:
 \begin{itemize}
-    \item Pré-processamento de Texto: Etapa utilizada para limpar e normalizar o texto antes da análise. Inclui a remoção de \textit{stopwords} (palavras comuns como "e", "o", "a"), pontuações, caracteres especiais, lematização (redução de palavras à sua forma base) e \textit{stemming} (redução de palavras ao seu radical) \cite{ganesan2022}.
-    \item Tratamento de \textit{Negation}: A presença de negações ("não gostei", "nunca farei") pode inverter o sentido de uma frase e deve ser tratada adequadamente para evitar classificações errôneas \cite{liu2012}.
-    \item Linguagem Específica e Gírias: Termos específicos de um domínio (como jargões acadêmicos) e gírias podem não estar presentes em léxicos genéricos e requerem adaptação ou construção de léxicos especializados \cite{pang2004}.
-    \item Ironia e Sarcasmo: A detecção de ironia e sarcasmo é um desafio significativo na análise de sentimentos, pois a polaridade literal das palavras é oposta à intenção do autor \cite{liu2012}.
-    \item Emojis e Emoticons: Em textos informais, emojis e emoticons são expressivamente utilizados para transmitir sentimentos e devem ser considerados na análise \cite{salgado2024}.
-    \item Modelo de Idioma: A análise de sentimentos para a língua portuguesa apresenta desafios específicos devido à sua complexidade gramatical, polissemia e riqueza de sinônimos, exigindo modelos e recursos linguísticos adaptados \cite{souza2020}.
+    \item Pré-processamento de Texto: Etapa utilizada para limpar e normalizar o texto antes da análise. Inclui a remoção de \textit{stopwords} 
+        (palavras comuns como ``e'', ``o'', ``a''), pontuações, caracteres especiais, lematização (redução de palavras à sua forma base) 
+        e \textit{stemming} (redução de palavras ao seu radical) \cite{ganesan2022}.
+    \item Tratamento de Negação: A presença de negações como ``não gostei'' e ``nunca farei'', pode inverter o sentido de uma frase e deve ser 
+        tratada adequadamente para evitar classificações errôneas \cite{liu2012}.
+    \item Linguagem Específica e Gírias: Termos específicos de um domínio, como jargões acadêmicos e gírias, podem não estar presentes em léxicos 
+        genéricos e requerem adaptação ou construção de léxicos especializados \cite{pang2004}.
+    \item Ironia e Sarcasmo: A detecção de ironia e sarcasmo é um desafio significativo na análise de sentimentos, pois a polaridade literal das 
+        palavras é oposta à intenção do autor \cite{liu2012}.
+    \item Emojis e Emoticons: Em textos informais, emojis e emoticons são expressivamente utilizados para transmitir sentimentos e devem ser 
+        considerados na análise \cite{salgado2024}.
+    \item Modelo de Idioma: A análise de sentimentos para a língua portuguesa apresenta desafios específicos devido à sua complexidade gramatical, 
+        polissemia e riqueza de sinônimos, exigindo modelos e recursos linguísticos adaptados \cite{souza2020}.
 \end{itemize}
-
-
 
 
 \subsection{Ferramentas e Modelos}
 
-Nos últimos anos, a área de análise de sentimentos tem sido significativamente impactada pelo avanço dos modelos de Deep Learning e Transformers. Esses modelos, pré-treinados em grandes volumes de texto, demonstraram capacidades impressionantes de compreensão de linguagem e geração de texto, superando abordagens tradicionais em muitas tarefas de PLN, incluindo a análise de sentimentos \cite{devlin2019}.
+Nos últimos anos, a área de análise de sentimentos tem sido significativamente impactada pelo avanço dos modelos de \textit{Deep Learning} e \textit{Transformers}. 
+Esses modelos, pré-treinados em grandes volumes de texto, demonstraram capacidades impressionantes de compreensão de linguagem e geração de texto, 
+superando abordagens tradicionais em muitas tarefas de PLN, incluindo a análise de sentimentos \cite{devlin2019}.
 
-É importante ressaltar que a escolha da ferramenta ou modelo depende de diversos fatores, como o volume e a natureza dos dados, a disponibilidade de recursos computacionais, a necessidade de precisão e a granularidade da análise desejada. Para o contexto das avaliações de disciplinas em português, o uso de modelos Transformer pré-treinados em português, como o BERTimbau ou RoBERTa com fine-tuning para o domínio específico, pode oferecer os melhores resultados em termos de precisão e compreensão contextual.
+É importante ressaltar que a escolha da ferramenta ou modelo depende de diversos fatores, como o volume e a natureza dos dados, 
+a disponibilidade de recursos computacionais, a necessidade de precisão e a granularidade da análise desejada. 
+Para o contexto das avaliações de disciplinas em português, o uso de modelos \textit{Transformers} pré-treinados em português, 
+como o BERTimbau ou RoBERTa com \textit{fine-tuning}, ou ajuste fino, para o domínio específico, pode oferecer os melhores resultados em termos de precisão e compreensão contextual.
 
 %E: Mostrar uma possível tabela comparativa?
 %W: Neste momento, nao eh necessario
@@ -66,27 +107,43 @@ Nos últimos anos, a área de análise de sentimentos tem sido significativament
 \subsection{Trabalhos Relacionados}
 
 %W: Aqui, nesta subsecao, veja se consegue encontrar alguns trabalhos que utilizam modelos de AS no contexto educacional ou ate mesmo similares.
-%Para facilitar, veja alguns trabalhos do tipo Survey/Review, como https://arxiv.org/abs/2302.04359, ou papers similares sobre este tema como https://link.springer.com/article/10.1007/s10639-023-11736-2 ou https://www.tandfonline.com/doi/abs/10.1080/17517575.2020.1773542. A partir deles, pode tentar pinçar algumas tecnicas que ja foram descritas nesses trabalhos. Nao é necessário ter muitos trabalhos discutidos (uns 7 ou 8). Discutir de forma bem suscinta e objetiva (ver como os trabalhos acima fazem isso com os outros trabalhos que eles citam).
+% Para facilitar, veja alguns trabalhos do tipo Survey/Review, como https://arxiv.org/abs/2302.04359, 
+% ou papers similares sobre este tema como https://link.springer.com/article/10.1007/s10639-023-11736-2 
+% ou https://www.tandfonline.com/doi/abs/10.1080/17517575.2020.1773542. 
+% A partir deles, pode tentar pinçar algumas tecnicas que ja foram descritas nesses trabalhos. 
+% Nao é necessário ter muitos trabalhos discutidos (uns 7 ou 8). 
+% Discutir de forma bem suscinta e objetiva (ver como os trabalhos acima fazem isso com os outros trabalhos que eles citam).
 
-A análise de sentimentos em avaliações de disciplinas no contexto educacional tem se mostrado uma ferramenta valiosa para compreender a percepção dos estudantes e subsidiar a gestão acadêmica. Alguns estudos recentes exploram essa aplicação, utilizando diferentes técnicas e abordagens para extrair informações de dados textuais.
+A análise de sentimentos em avaliações de disciplinas no contexto educacional tem se mostrado uma ferramenta valiosa para compreender 
+a percepção dos estudantes e subsidiar a gestão acadêmica. Alguns estudos recentes exploram essa aplicação, utilizando diferentes 
+técnicas e abordagens para extrair informações de dados textuais.
  
-Um estudo recente de \citeonline{koufakou2024} propõe uma arquitetura para mineração de sentimentos a partir de avaliações online de cursos. Para isso, utilizou-se uma abordagem baseada em aprendizado de máquina e modelos como o BERT e RoBERTa, destacando a importância da análise de sentimentos para melhorar a qualidade do ensino e a experiência do aluno. A pesquisa mostra como a identificação de padrões de sentimentos pode fornecer \textit{feedback} construtivo para educadores e administradores de cursos, auxiliando na tomada de decisões estratégicas para uma melhoria contínua.
+Um estudo recente de \citeonline{koufakou2024} propõe uma arquitetura para mineração de sentimentos a partir de avaliações online de cursos. 
+Para isso, utilizou-se uma abordagem baseada em aprendizado de máquina e modelos como o BERT e RoBERTa, destacando a importância da análise 
+de sentimentos para melhorar a qualidade do ensino e a experiência do aluno. A pesquisa mostra como a identificação de padrões de sentimentos 
+pode fornecer \textit{feedback} construtivo para educadores e administradores de cursos, auxiliando na tomada de decisões estratégicas para uma melhoria contínua.
 
-Na mesma direção, \citeonline{shaik2023} investigaram a aplicação de técnicas de análise de sentimentos para avaliar o \textit{feedback} de estudantes. O trabalho ressalta a capacidade da análise de sentimentos na identificação de pontos fortes e fracos dos programas, permitindo uma resposta mais ágil e direcionada às necessidades dos estudantes.
+Na mesma direção, \citeonline{shaik2023} investigaram a aplicação de técnicas de análise de sentimentos para avaliar o \textit{feedback} de estudantes. 
+O trabalho ressalta a capacidade da análise de sentimentos na identificação de pontos fortes e fracos dos programas, permitindo uma resposta 
+mais ágil e direcionada às necessidades dos estudantes.
 
-Já no estudo de \citeonline{grljevic2022}, explorou-se o uso de \textit{big data} e análise de sentimentos para entender a percepção dos alunos sobre o ambiente de aprendizado em instituições de ensino, utilizando informações de um \textit{website} com mais de 8000 avaliações. Embora o foco seja mais amplo, o trabalho aborda a relevância da análise de sentimentos para aprimorar a experiência educacional, fornecendo informações sobre o engajamento e a satisfação dos estudantes.
+Já no estudo de \citeonline{grljevic2022}, explorou-se o uso de \textit{big data} e análise de sentimentos para entender a percepção dos alunos 
+sobre o ambiente de aprendizado em instituições de ensino, utilizando informações de um \textit{website} com mais de 8000 avaliações. 
+Embora o foco seja mais amplo, o trabalho aborda a relevância da análise de sentimentos para aprimorar a experiência educacional, 
+fornecendo informações sobre o engajamento e a satisfação dos estudantes.
 
-Esses trabalhos demonstram a relevância e o potencial da análise de sentimentos para aprimorar a gestão educacional, oferecendo uma visão agregada e estratégica a partir de grandes volumes de avaliações, o que corrobora com o objetivo proposto para este trabalho.
-
+Esses trabalhos demonstram a relevância e o potencial da análise de sentimentos para aprimorar a gestão educacional, oferecendo uma visão 
+estratégica a partir de grandes volumes de avaliações, o que corrobora com o objetivo proposto para este trabalho.
 
 %W: Remanejar esta secao para os resultados... futuramente (entao pode suprimir agora deste capítulo)
 %E: Ok
 % \section{Análise quantitativa}\label{analise-quantitativa}
 
-% Compreender a distribuição das notas e verificar a correlação entre as notas e a análise de sentimentos. Possíveis técnicas: estatísticas descritivas (média, mediana, moda, desvio padrão por pergunta/disciplina/ano), histogramas, boxplots, heatmaps de correlação, dentre outras.
+% Compreender a distribuição das notas e verificar a correlação entre as notas e a análise de sentimentos. 
+% Possíveis técnicas: estatísticas descritivas (média, mediana, moda, desvio padrão por pergunta/disciplina/ano), 
+% histogramas, boxplots, heatmaps de correlação, dentre outras.
 
 %\section{Análise temporal}\label{analise-temporal}
 %As notas estão melhorando ou piorando ao longo do tempo? Utilizar séries temporais?
 
-
-No próximo capítulo tem-se a metodologia de desenvolvimento utilizada para o processo de análise de sentimentos em avaliação de disciplinas.
+No próximo capítulo, será detalhada a metodologia de desenvolvimento utilizada para o processo de análise de sentimentos em avaliação de disciplinas.

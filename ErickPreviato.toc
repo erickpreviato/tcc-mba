@@ -23,17 +23,25 @@
 \contentsline {section}{\numberline {3.1}Descrição e Tratamento da Base de Dados}{31}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Estrutura dos Dados}{31}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Tratamento dos Dados}{32}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Separação de Dados para Rotulação Manual}{32}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}Separação de Dados para Rotulação Manual}{33}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Pré-processamento e Rotulação dos Dados}{33}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Pré-processamento de Texto}{33}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Rotulação Auxiliada por LLM}{33}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Rotulação Auxiliada por LLM}{34}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Preparação para o Treinamento do Modelo}{34}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Modelagem e Fine-Tuning dos Modelos de Linguagem}{34}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Avaliação dos Modelos Classificadores}{34}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Matriz de Confusão e Métricas de Desempenho}{34}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Conclusão}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.3.1}Matriz de Confusão e Métricas de Desempenho}{35}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Conclusão}{36}{section.3.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Conclusão}}{37}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussões}}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Configuração experimental e métricas}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Comparativo de desempenho dos modelos}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Análise de erros e matriz de confusão}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Validação qualitativa com dados reais}{39}{section.4.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e trabalhos futuros}}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Contribuições}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Trabalhos futuros}{41}{section.5.2}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{39}{section*.19}%
+\contentsline {chapter}{\uppercase {Refer\^encias}}{43}{section*.19}%

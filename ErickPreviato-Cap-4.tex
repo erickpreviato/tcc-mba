@@ -1,8 +1,134 @@
 % Capitulo 4
 
 % ----------------------------------------------------------
-% Conclusão
+% Resultados e discussões
 % ----------------------------------------------------------
-\chapter[Conclusão]{Conclusão}
-\label{Conclusão}
+\chapter[Resultados e discussões]{Resultados e discussões}
+\label{Resultados e discussões}
 
+Este capítulo apresenta a avaliação experimental dos modelos de aprendizado profundo baseados em \textit{Transformers},
+aplicados à tarefa de análise de sentimentos de comentários de alunos sobre cursos de graduação.
+
+\section{Configuração experimental e métricas}
+
+Para garantir a confiabilidade dos resultados, o conjunto de dados processado foi dividido na proporção de 80\% para treinamento e 20\% para validação,
+utilizando estratificação para manter a distribuição original das classes, conforme descrito na Seção \ref{pre-processamento}.
+
+A avaliação dos modelos foi conduzida utilizando quatro métricas principais, escolhidas para oferecer uma visão holística do desempenho dos classificadores,
+especialmente considerando o possível desbalanceamento das classes. As métricas utilizadas foram: Acurácia, \textit{}, Coeficiente de Correlação de Matthews (MCC)
+e Kappa de Cohen.
+
+\section{Comparativo de desempenho dos modelos}
+
+Foram treinados e avaliados dois modelos pré-treinados baseados em \textit{Transformers}, sendo eles BERTimbau e RoBERTa. Dentre esses modelos, 
+foram utilizados duas variações de cada um: BERTimbau-Base, BERTimbau-Large, XLM-RoBERTa-Base e XLM-RoBERTa-Large.
+A tabela \ref{tab:resultados_modelos} e o gráfico \ref{fig:resultados_modelos} apresentam um resumo dos resultados obtidos após o \textit{fine-tuning} para cada modelo nas 
+métricas selecionadas.
+
+% colocar referência
+\begin{table}[H]
+    \centering
+    \caption{Comparação de métricas entre os modelos avaliados.}
+    \label{tab:resultados_modelos}
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Modelo} & \textbf{Acurácia} & \textbf{\textit{F1-score}} & \textbf{MCC} & \textbf{Kappa} \\
+        \midrule
+        BERTimbau-Base    & 0.880000 & 0.875245 & 0.800280 & 0.798613 \\
+        BERTimbau-Large   & 0.906667 & 0.903733 & 0.845077 & 0.843959 \\
+        XLM-RoBERTa-Base  & 0.833333 & 0.769192 & 0.733353 & 0.701813 \\
+        XLM-RoBERTa-Large & 0.813333 & 0.749260 & 0.693264 & 0.668874 \\
+        \bottomrule
+    \end{tabular}
+    \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{USPSC-img/resultados_modelos.png}
+    \caption{Desempenho dos modelos nas métricas avaliadas.}
+    \label{fig:resultados_modelos}
+    \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
+\end{figure}
+
+Observa-se que o modelo BERTimbau-Large apresentou o melhor desempenho em todas as métricas avaliadas, alcançando uma acurácia de 90,67\% e um \textit{F1-score} de 90,37\%.
+Este resultado corrobora a hipótese de que modelos pré-treinados especificamente em língua portuguesa, que é o caso do BERTimbau, 
+tendem a capturar melhor as nuances do idioma e, portanto, superar modelos multilíngues como o XLM-RoBERTa para tarefas específicas em português.
+
+Ao comparar as versões Base e Large dos modelos, nota-se que o aumento na capacidade do modelo, mais camadas e parâmetros,
+contribui significativamente para a melhoria do desempenho, especialmente no caso do BERTimbau. Porém, como a versão Base já apresenta um desempenho robusto,
+ela pode ser considerada uma alternativa viável em cenários com restrições computacionais.
+
+A análise do valor de MCC, acima de 0.84 para o BERTimbau-Large, indica uma forte correlação entre as previsões do modelo e as classes reais,
+validando a capacidade do modelo em lidar com a tarefa de classificação de sentimentos de forma eficaz.
+
+
+\section{Análise de erros e matriz de confusão}
+
+Para compreender as limitações dos modelos, analisou-se a matriz de confusão do melhor modelo, o BERTimbau-Large,
+conforme ilustrado na Figura \ref{fig:matriz_confusao_bertimbau_large}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{USPSC-img/matriz_confusao_bertimbau_large.png}
+    \caption{Matriz de confusão do modelo BERTimbau-Large.}
+    \label{fig:matriz_confusao_bertimbau_large}
+    \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
+\end{figure}
+
+A análise da matriz de confusão revela que a maior fonte de confusão ocorre entre as classes Neutro e as classes polares, Positivo e Negativo.
+Isso é um fenômeno esperado em tarefas de análise de sentimentos, dado que comentários neutros frequentemente contêm elementos ambíguos
+ou ironias que modelos de linguagem, mesmo avançados, podem ter dificuldade em interpretar corretamente sem um contexto mais amplo.
+Além disso, a subjetividade na rotulação manual dos dados pode introduzir ruído, especialmente em casos onde o sentimento expresso não é claramente definido.
+
+Por outro lado, a distinção entre as classes Positivo e Negativo foi realizada com alta precisão, com poucos casos de inversão de polaridades, 
+falsos positivos ou falsos negativos, indicando que o modelo é eficaz em capturar os sinais mais evidentes de sentimento, o que é crucial 
+para a aplicação prática do classificador em ambientes de produção.
+
+
+\section{Validação qualitativa com dados reais}
+
+Para testar a aplicabilidade do modelo em um cenário real, foi realizada uma validação qualitativa utilizando algumas frases inéditas,
+não presentes no conjunto de dados original. As frases foram selecionadas para representar diferentes nuances de sentimento.
+O modelo com o melhor desempenho classificou corretamente comentários como ``Péssima didática, não aprendi nada e as provas não faziam sentido.'' 
+como Negativo, e ``A ementa da disciplina é fantástica, muito atual e aplicada ao mercado.'' como Positivo, ambos com alta confiança, maior que 95\%.
+
+Nessa validação, as seguintes frases foram testadas:
+
+\begin{enumerate}
+    \item O professor explica muito bem, mas a sala é muito barulhenta.
+    \item Péssima didática, não aprendi nada e as provas não faziam sentido.
+    \item A ementa da disciplina é fantástica, muito atual e aplicada ao mercado.
+    \item Aula normal, nada demais.
+    \item O curso superou minhas expectativas, recomendo a todos!
+    \item Não há o que opinar sobre o docente.
+\end{enumerate}
+
+A Tabela \ref{tab:validacao_qualitativa} apresenta os resultados da classificação dessas frases pelos quatro modelos treinados, com o número de confiança entre parênteses.
+
+\begin{table}[H]
+    \centering
+    \caption{Resultados da validação qualitativa com frases inéditas.}
+    \label{tab:validacao_qualitativa}
+    \small
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Frase} & \textbf{BERTimbau-Large} & \textbf{BERTimbau-Base} & \textbf{RoBERTa-Large} & \textbf{RoBERTa-Base} \\
+        \midrule
+        1 & Negativo (52\%) & Negativo (71\%) & Negativo (67\%) & Negativo (73\%) \\
+        2 & Negativo (96\%) & Negativo (91\%) & Negativo (90\%) & Negativo (85\%) \\
+        3 & Positivo (98\%) & Positivo (97\%) & Positivo (94\%) & Positivo (95\%) \\
+        4 & Positivo (93\%) & Negativo (56\%) & Negativo (49\%) & Positivo (91\%) \\
+        5 & Positivo (98\%) & Positivo (97\%) & Positivo (99\%) & Positivo (95\%) \\
+        6 & Neutro (57\%)   & Neutro (63\%)   & Negativo (56\%) & Negativo (41\%) \\
+        \bottomrule
+    \end{tabular}
+    \legend{\textbf{Fonte:} Elaborada pelo autor (2025).}
+\end{table}
+
+Os resultados da Tabela \ref{tab:validacao_qualitativa} revelam que, embora todos os modelos apresentem alta performance em sentenças de polaridade explícita (Frases 2, 3 e 5), 
+há uma divergência significativa em sentenças neutras ou ambíguas. Nota-se que os modelos da família BERTimbau foram os únicos capazes de identificar a neutralidade da Frase 6, 
+enquanto os modelos RoBERTa tenderam a classificar falsos negativos. Esse fenômeno sugere que o pré-treinamento do BERTimbau em larga escala com dados do português 
+confere uma vantagem semântica para interpretar expressões de indiferença ou objetividade típicas do ambiente acadêmico brasileiro.
+
+No próximo capítulo, serão apresentadas as conclusões do trabalho, bem como sugestões para pesquisas futuras nesta área.
