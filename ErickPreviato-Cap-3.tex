@@ -8,9 +8,7 @@
 \chapter[Desenvolvimento]{Desenvolvimento}
 \label{Desenvolvimento}
 
-Este capítulo detalha a metodologia de pesquisa empregada, abrangendo a descrição da base de dados utilizada, o processo de pré-processamento, 
-a rotulação dos dados, o \textit{fine-tuning} dos Modelos de Linguagem de Grande Escala (LLMs) e, por fim, 
-as métricas de avaliação de desempenho dos modelos classificadores de sentimento desenvolvidos.
+Este capítulo detalha a metodologia de pesquisa empregada, abrangendo a descrição da base de dados utilizada, o processo de pré-processamento e rotulação dos dados, o \textit{fine-tuning} de modelos de linguagem pré-treinados baseados em Transformers e, por fim, as métricas utilizadas para a avaliação do desempenho dos classificadores de sentimentos desenvolvidos.
 
 
 \section{Descrição e Tratamento da Base de Dados}
@@ -107,7 +105,7 @@ Esta seção detalha as etapas de pré-processamento e a estratégia de rotulaç
 
 \subsection{Pré-processamento de Texto}
 
-O pré-processamento do texto livre é crucial para otimizar o desempenho dos modelos de \textit{Machine Learning} e LLMs. 
+O pré-processamento do texto livre é crucial para otimizar o desempenho dos modelos de \textit{Machine Learning}. 
 Os seguintes passos foram aplicados às colunas C15, C16 e C17:
 
 \begin{itemize}
@@ -167,7 +165,7 @@ indicando o número de classificações corretas e incorretas por classe. Os ter
     \item Falsos Negativos (FN): instâncias positivas classificadas incorretamente como negativas (Erro Tipo II).
 \end{itemize}
 
-Com base na Matriz de Confusão, as métricas que foram utilizadas para comparar a eficácia dos classificadores são descritas a seguir.
+Com base na Matriz de Confusão, as métricas que foram utilizadas para comparar a eficácia dos classificadores são descritas a seguir \cite{naidu2023review}.
 
 Acurácia (\textit{Accuracy}). Mede a proporção de predições corretas em relação ao total de instâncias. 
 É uma métrica simples, mas pode ser enganosa em casos de desequilíbrio de classes.
@@ -202,13 +200,16 @@ onde \(P_o\) é a proporção de observações concordantes e \(P_e\) é a propo
 Essas métricas permitem avaliar a capacidade dos modelos em classificar corretamente os sentimentos, considerando o equilíbrio entre falsos positivos e falsos negativos.
 
 
-\section{Conclusão}
+\section{Considerações Finais}
 
 Este capítulo apresentou a metodologia adotada para o desenvolvimento dos modelos classificadores de sentimento, 
 desde a descrição e tratamento da base de dados, passando pelo pré-processamento e rotulação, 
 até o \textit{fine-tuning} dos modelos e a avaliação de seu desempenho.
 As etapas descritas garantem a robustez do processo e a confiabilidade dos resultados obtidos, 
 que serão discutidos no próximo capítulo.
+
+
+
 
 
 

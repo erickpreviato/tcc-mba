@@ -61,6 +61,11 @@ ISBN 1608458849.}
 ISSN 2090-4479.
 Dispon{\'\i}vel em: \url{https://www.sciencedirect.com/science/article/pii/S2090447914000550}.}
 
+\bibitem[Naidu, Zuva e Sibanda 2023]{naidu2023review}
+\abntrefinfo{Naidu, Zuva e Sibanda}{Naidu; Zuva; Sibanda}{2023}
+{NAIDU, G.; ZUVA, T.; SIBANDA, E.~M. A review of evaluation metrics in machine learning algorithms. \textit{In}:  SILHAVY, R.; SILHAVY, P. (ed.). \textbf{Artificial Intelligence Application in Networks and Systems}. Cham: Springer International Publishing, 2023. p. 15--25.
+ISBN 978-3-031-35314-7.}
+
 \bibitem[Pang e Lee 2004]{pang2004}
 \abntrefinfo{Pang e Lee}{Pang; Lee}{2004}
 {PANG, B.; LEE, L. \textbf{A Sentimental Education: Sentiment Analysis Using Subjectivity Summarization Based on Minimum Cuts}. 2004.

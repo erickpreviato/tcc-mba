@@ -4,25 +4,23 @@
 % Resultados e discussões
 % ----------------------------------------------------------
 \chapter[Resultados e discussões]{Resultados e discussões}
-\label{Resultados e discussões}
+\label{Resultados e Discussões}
+Este capítulo apresenta a avaliação experimental de modelos de linguagem baseados em \textit{Transformers}, aplicados à tarefa de análise de sentimentos em comentários de alunos dos cursos de graduação, que constituem o objeto de estudo desta pesquisa.
 
-Este capítulo apresenta a avaliação experimental dos modelos de aprendizado profundo baseados em \textit{Transformers},
-aplicados à tarefa de análise de sentimentos de comentários de alunos sobre cursos de graduação.
+\section{Configuração Experimental e Métricas}
 
-\section{Configuração experimental e métricas}
-
-Para garantir a confiabilidade dos resultados, o conjunto de dados processado foi dividido na proporção de 80\% para treinamento e 20\% para validação,
+Conforme mencionado no capítulo anterior, o conjunto de dados processado foi dividido na proporção de 80\% para treinamento e 20\% para validação,
 utilizando estratificação para manter a distribuição original das classes, conforme descrito na Seção \ref{pre-processamento}.
 
-A avaliação dos modelos foi conduzida utilizando quatro métricas principais, escolhidas para oferecer uma visão global do desempenho dos classificadores,
+Em linha com o capítulo anterior, a avaliação dos modelos foi conduzida utilizando quatro métricas principais, escolhidas para oferecer uma visão global do desempenho dos classificadores,
 especialmente considerando o possível desbalanceamento das classes. As métricas utilizadas foram: Acurácia, \textit{F1-Score}, Coeficiente de Correlação de Matthews (MCC)
 e Kappa de Cohen.
 
-\section{Comparativo de desempenho dos modelos}
+\section{Comparativo de Desempenho dos Modelos}
 
 Foram treinados e avaliados dois modelos pré-treinados baseados em \textit{Transformers}, sendo eles BERTimbau e RoBERTa. Dentre esses modelos, 
 foram utilizados duas variações de cada um: BERTimbau-Base, BERTimbau-Large, XLM-RoBERTa-Base e XLM-RoBERTa-Large.
-A tabela \ref{tab:resultados_modelos} e o gráfico \ref{fig:resultados_modelos} apresentam um resumo dos resultados obtidos após o \textit{fine-tuning} para cada modelo nas 
+A Tabela~\ref{tab:resultados_modelos} e a Figura~\ref{fig:resultados_modelos} apresentam um resumo dos resultados obtidos após o \textit{fine-tuning} para cada modelo nas 
 métricas selecionadas.
 
 % colocar referência
@@ -63,7 +61,7 @@ A análise do valor de MCC, acima de 0.84 para o BERTimbau-Large, indica uma for
 validando a capacidade do modelo em lidar com a tarefa de classificação de sentimentos de forma eficaz.
 
 
-\section{Análise de erros e matriz de confusão}
+\section{Análise de Erros e Matriz de Confusão}
 
 Para compreender as limitações dos modelos, analisou-se a matriz de confusão do melhor modelo, o BERTimbau-Large,
 conforme ilustrado na Figura \ref{fig:matriz_confusao_bertimbau_large}.
@@ -86,7 +84,7 @@ falsos positivos ou falsos negativos, indicando que o modelo é eficaz em captur
 para a aplicação prática do classificador em ambientes de produção.
 
 
-\section{Validação qualitativa com dados reais}
+\section{Análise Qualitativa com Dados Reais}
 
 Para testar a aplicabilidade do modelo em um cenário real, foi realizada uma validação qualitativa utilizando algumas frases inéditas,
 não presentes no conjunto de dados original. As frases foram selecionadas para representar diferentes nuances de sentimento.
